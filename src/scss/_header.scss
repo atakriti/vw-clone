@@ -1,0 +1,62 @@
+header{
+    background: linear-gradient(#000000d8,#000000b0,#0000007e,#0000004d, #00000000);
+    position: fixed;
+    width: 100%;
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 4% 0 4%;
+        // =========== menu =================
+        .menu{
+            width:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i{
+                font-size: calc($p + 0.2vw);
+                color: white;
+            }
+            p{
+                font-size: $sm;
+                color: white;
+            }
+        }
+        // =========== header icons ======
+        .header-icon{
+            width: 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i{
+                font-size: calc($p + 0.2vw);
+            color: white;
+        }
+
+        }
+    }
+    // ==================== logo ===========
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .line-left{
+            width: 70%;
+            background-color: white;
+            height: 0.15vw;
+            
+        }
+        svg{
+            fill: white;
+            width: 3vw;
+            height: 3vw;
+            margin: 0 1%;
+        }
+        .line-right{
+            width: 28%;
+            background-color: white;
+            height: 0.15vw;
+        }
+    }
+}

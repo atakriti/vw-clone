@@ -1,28 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Description" content="VW-Clone">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link rel="stylesheet" href="./styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Description" content="VW-Clone" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>VW-Clone</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- ========================= Header =================== -->
     <header>
-        <nav>
-            <div class="menu">
-                <i class="fa-solid fa-bars-staggered"></i>
-                <p>Menü</p>
-            </div>
-            <div class="header-icon">
-                <i class="fa-regular fa-circle-user"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </nav>
+      <nav>
+        <div class="menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+          <p>Menü</p>
+        </div>
+        <div class="header-icon">
+          <i class="fa-regular fa-circle-user"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav>
+      <div class="logo">
+        <div class="line-left"></div>
+        <!-- =========== SVG =============== -->
+        <svg
+          role="img"
+          aria-label="Volkswagen"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+        >
+          <title>Volkswagen</title>
+          <path
+            d="M12 22.586c-5.786 0-10.543-4.8-10.543-10.586 0-1.2.214-2.357.6-3.471l6.172 12c.085.171.171.3.385.3.215 0 .3-.129.386-.3l2.871-6.386c.043-.086.086-.129.129-.129.086 0 .086.086.129.129l2.914 6.386c.086.171.171.3.386.3.214 0 .3-.129.385-.3l6.172-12c.385 1.071.6 2.228.6 3.471-.043 5.786-4.8 10.586-10.586 10.586Zm0-13.329c-.086 0-.086-.086-.129-.128l-3.3-7.115a10.117 10.117 0 0 1 6.858 0l-3.3 7.115c-.043.042-.043.128-.129.128Zm-3.471 7.714c-.086 0-.086-.085-.129-.128L3 6.47c.943-1.542 2.314-2.828 3.9-3.728l3.814 8.228c.086.172.172.215.3.215h1.972c.128 0 .214-.043.3-.215l3.771-8.228c1.586.9 2.957 2.186 3.9 3.728L15.6 16.843c-.043.086-.086.128-.129.128-.085 0-.085-.085-.128-.128L13.286 12.3c-.086-.171-.172-.214-.3-.214h-1.972c-.128 0-.214.043-.3.214l-2.057 4.543c-.043.043-.043.128-.128.128ZM12 24c6.643 0 12-5.357 12-12S18.643 0 12 0 0 5.357 0 12s5.357 12 12 12Z"
+          ></path>
+        </svg>
+        <div class="line-right"></div>
+      </div>
     </header>
+    <!-- ===================== main ==================== -->
+    <main>
+      <!-- ============ baner ============= -->
+      <div class="baner"></div>
+      <!-- ================ id5 ============== -->
+      <div class="id-5">
+        <h1>Der vollelektrische ID.5</h1>
+        <button>Mehr Zum ID.5</button>
+        <ul>
+          <li>
+            <b>ID.5 Pro</b> <br> Stromverbrauch in kWh/100 km: kombiniert 16,2; CO₂-Emission
+            in g/km: <br> kombiniert 0; Effizienzklasse: A+++. <br> <b>ID.5 Pro Performance</b> <br>
+            Stromverbrauch in kWh/100 km: kombiniert 16,2; CO₂-Emission in g/km: <br>
+            kombiniert 0; Effizienzklasse: A+++. <br> Bildliche Darstellungen können
+            vom Auslieferungsstand abweichen.
+          </li>
+        </ul>
+      </div>
+      <!-- ================== Highlights ================ -->
+      <div class="highlights">
+          <h1>Aktuelle Modell-Highlights</h1>
+          <!-- Tiguan  -->
+          <div class="tiguan">
+              <span>
+                  <div class="img"><a ><img src="./images/tiguan.webp" alt=""></a>
+                <div class="floated-text"><p>Die nachfolgenden Fahrzeugabbildungen zeigen Sonderausstattungen.</p> <i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="text">
+                    <p>Modelle und Konfigurator</p>
+                    <h2>Der neue Tiguan Allspace</h2>
+                    <a href="#">Mehr zum neuen Tiguan Allspace</a>
+                </div>
+              </span>
+          </div>
+          <!-- T-Roc -->
+          <div class="t-roc">
+           <span>
+            <div class="img"><a ><img src="./images/t-roc.webp" alt=""></a>
+                <div class="floated-text"><p>Kraftstoffverbrauch T‑Roc Cabriolet R-Line in l/100 km: 7,2-6,4; außerorts 5,4-4,9; kombiniert 5,9-5,6; CO₂-Emission in g/km: kombiniert 134-128; Effizienzklasse: B.</p> <i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="text">
+                <p>Modelle und Konfigurator</p>
+                <h2>Das neue T‑Roc Cabriolet</h2>
+                <a href="#">Mehr zum neuen T-Roc Cabriolet</a>
+            </div>
+           </span>
+          </div>
+          <!-- modelle  -->
+          <div class="modelle">
+             <span>
+                <div class="img"><a ><img src="./images/modelle.webp" alt=""></a></div>
+                <div class="text">
+                    <p>Modelle und Konfigurator</p>
+                    <h2>Jetzt alle <b>Volkswagen Modelle </b> entdecken</h2>
+                    <a href="#">Weitere Modelle finden Sie in unserer Modellübersicht</a>
+                </div>
+             </span>
+          </div>
+          <!-- taigo -->
+          <div class="taigo">
+              <span>
+                <div class="img"><a ><img src="./images/taigo.webp" alt=""></a></div>
+                <div class="text">
+                    <p>Modelle und Konfigurator <br> <b>Der neue Taigo</b></p>
+                    <h2>Der neue Taigo. Für alle, die ihre eigenen Trends setzen. Die sich nicht verändern lassen, sondern lieber selbst etwas bewegen. Die nicht nur Stil zeigen, sondern Charakter. Und die selbst im Alltag das Außergewöhnliche finden.</h2>
+                    <a href="#">Mehr zum neuen Taigo</a>
+                </div>
+              </span>
+          </div>
+      </div>
+    </main>
     <!-- =================== JavaScript SRC ==================== -->
     <script src="./javascript/main.js"></script>
-</body>
+  </body>
 </html>
