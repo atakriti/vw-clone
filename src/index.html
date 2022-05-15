@@ -164,7 +164,12 @@
           <!-- ================= form================= -->
           <form action="">
             <input placeholder="Postleitzahl, Ort" type="search" name="search" id="4">
-            <input type="checkbox" name="online" id="5"> <label for="online">Online kaufbar <i class="fa-solid fa-exclamation"></i></label>
+            <div class="checkBox">
+              <div class="checkboxInputCon">
+                <input type="checkbox" name="online" id="5">
+              </div> 
+              <label for="online">Online kaufbar <i class="fa-solid fa-info"></i></label>
+            </div>
           </form>
           <!-- =================== button ========= -->
           <div class="btn">
@@ -172,6 +177,38 @@
             <a href="#">Detailsuche öffnen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
 
+      </div> 
+      <!-- ============================= ANGEBOTE =============== -->
+      <div class="angebote">
+        <h1>Angebote und Aktionen</h1>
+        <div class="angebote-container">
+          <div class="angebote-bg-color"></div>
+          <!-- =============== text -->
+          <div class="text">
+            <h1>Das Volkswagen <br> AutoAbo</h1>
+            <p>Elektromobilität bei voller Kostentransparenz erleben und dabei flexibel bleiben: Das Volkswagen AutoAbo liefert Ihnen genau das. Unsere Modelle ID.3 und ID.4 sind kurzfristig verfügbar und bieten vollelektrischen Fahrspaß mit attraktiver Ausstattung. Einfach online buchbar, ohne langfristige Bindung zum monatlichen Festpreis. Nur Ihre Ladestromkosten kommen noch dazu.</p>
+            <button>Zum Volkswagen AutoAbo</button>
+          </div>
+          <!-- ================= img -->
+          <div class="img">
+            <a ><img src="./images/angebote.webp" alt=""></a>
+            <div class="img-text">
+              <div class="img-txt-con">
+                <ul>
+                  <li>
+                    Ihr Vertrags- und Ansprechpartner ist die EURO-Leasing GmbH (Impressum). Hinweise zur Datenverarbeitung finden Sie unter folgendem Link.
+                  </li>
+                  <li>Stromverbrauch ID.3 in kWh/100 km: kombiniert 14,0-13,7; CO2-Emission in g/km: kombiniert 0; Effizienzklasse: A+++.* <br>
+                    *Der ID.3 Pure Performance ist vorrübergehend nicht mit einer individuellen Ausstattung bestellbar. 
+                  </li>
+                  <li>Stromverbrauch ID.4 in kWh/100 km: kombiniert 16,3-15,6; CO2-Emission in g/km: kombiniert 0; Effizienzklasse: A+++.</li>
+                  <li>Die nachfolgenden Fahrzeugabbildungen zeigen Sonderausstattungen.</li>
+                </ul>
+                <i onclick="iX3()" class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- =================== JavaScript SRC ==================== -->

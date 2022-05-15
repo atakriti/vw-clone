@@ -43,14 +43,13 @@ main{
                         .floated1-con,.floated2-con{
                             display: flex;
                             justify-content: space-between;
-                            align-items: center;
                             p{
                                 width: 80%;
                                 font-size: $p;
                                 color: white;
                             }
                             i{
-                                font-size: calc($p + 0.5vw);
+                                font-size: $p;
                                 color: white;
                                 cursor: pointer;
                             }
