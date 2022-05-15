@@ -1,0 +1,51 @@
+// DOWN 1 ===============
+@keyframes down1 {
+    from{
+        height: 4vw;
+    }
+    to{
+        height: 7vw;
+    }
+}
+@keyframes up1 {
+    from{
+        height: 7vw;
+    }
+    to{
+        height: 4vw;
+    }
+}
+// DOWN 2 =================
+@keyframes down2 {
+    from{
+        height: 4vw;
+    }
+    to{
+        height: 10vw;
+    }
+}
+@keyframes up2 {
+    from{
+        height: 10vw;
+    }
+    to{
+        height: 4vw;
+    }
+} 
+// =========== Down3 ========
+@keyframes down3 {
+    from{
+        height: 4vw;
+    }
+    to{
+        height: 12vw;
+    }
+}
+@keyframes up3 {
+    from{
+        height: 12vw;
+    }
+    to{
+        height: 4vw;
+    }
+} 

@@ -4,6 +4,8 @@
 @import "./highleights";
 @import "./neu-gebrauchtesWagen";
 @import "./angebote";
+@import "./sorts-threeSpan";
+@import "./animations";
 @import "./footer";
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap');
 *{
@@ -11,4 +13,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Lato', sans-serif;
+}
+i{
+    cursor: pointer;
+}
+html{
+    height: 6000px;
 }
