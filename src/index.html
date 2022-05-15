@@ -121,6 +121,58 @@
         </div>
         </div>
       </div>
+      <!-- ============= new and used cars ================ -->
+      <div class="used">
+          <h1>Neu-, Jahres- und Gebrauchtwagen</h1>
+          <!-- ============= plus content ============ -->
+          <div class="plus-content">
+            <a href="#"><i class="fa-solid fa-plus"></i> Neuwagen</a>
+            <a href="#"> <i class="fa-solid fa-plus"></i> Jahreswagen</a>
+            <a href="#"><i class="fa-solid fa-plus"></i> Gebrauchtwagen</a>
+          </div>
+          <!-- ================ Accordion ============ -->
+          <div class="accordions">
+            <!-- ===================== -->
+            <select  name="modelle" id="1">
+              <optgroup  label="Modelle">
+              <option  value="fox">Fox</option>
+              <option selected  value="golf">Golf</option>
+              <option  value="golf Plus">Golf Plus</option>
+              <option  value="passat">Passat</option>
+              </optgroup>
+              
+            </select>
+            <!-- ====================== -->
+            <select name="kraftstoff" id="2">
+             <optgroup label="Kraftstoff">
+              <option  value="autogas">Autogas</option>
+              <option selected value="benzin ">Benzin</option>
+              <option  value="Diesel">Diesel</option>
+              <option  value="elektro">Elektro</option>
+             </optgroup>
+            </select>
+            <!-- ======================== -->
+            <select name="pries bis" id="3">
+              <optgroup label="Preise bis">
+               <option  value="1000">1000 €</option>
+               <option  value="2500 ">2500 €</option>
+               <option  value="4000">4000 €</option>
+               <option  value="5000">5000 €</option>
+              </optgroup>
+             </select>
+          </div>
+          <!-- ================= form================= -->
+          <form action="">
+            <input placeholder="Postleitzahl, Ort" type="search" name="search" id="4">
+            <input type="checkbox" name="online" id="5"> <label for="online">Online kaufbar <i class="fa-solid fa-exclamation"></i></label>
+          </form>
+          <!-- =================== button ========= -->
+          <div class="btn">
+            <button>96 Treffer anzeigen</button>
+            <a href="#">Detailsuche öffnen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+      </div>
     </main>
     <!-- =================== JavaScript SRC ==================== -->
     <script src="./javascript/main.js"></script>
