@@ -57,3 +57,38 @@ main{
     }
 }
 
+// ========================== media query header =================
+@media only screen and (max-width:700px){
+    main{
+        .sorts{
+            flex-wrap: wrap;
+            span{
+                width: 100%;
+                margin-bottom: 4%;
+                .text1,.text2,.text3{
+                    min-height: 25vw;
+                    h2{
+                        font-size: $p-mo;
+                       
+                    }
+                    p{
+                        font-size: $fs3;
+                    }
+                    a{
+                        font-size: $fs3;
+                    }
+                    
+                }
+                .text2{
+                    min-height: 30vw;
+                }
+                .text3{
+                    min-height: 40vw;
+                }
+                .arrowUp{
+                    display: none;
+                }
+            }
+        }
+    }
+}
