@@ -109,3 +109,78 @@ main{
 
     }
 }
+
+// ========================== media query header =================
+@media only screen and (max-width:700px){
+    main{
+        .highlights{
+            h1{
+                font-size: $h1-mo;
+            }
+            .highlights-con{
+                .tiguan,.t-roc,.modelle,.taigo{
+                    width: 100%;
+                    span{
+                       .img{
+                        .floatedText1,.floatedText2{
+                            .floated1-con,.floated2-con{
+                                p{
+                                    font-size: $fs3;
+                                }
+                            }
+                        }
+                       }
+                       .text{
+                           p{
+                               font-size: $fs3;
+                           }
+                           h2{
+                               font-size: $p-mo;
+                           }
+                           a{
+                               font-size: $fs3;
+                           }
+                       }
+                    }
+                }
+                // =========================== INDIVIDUALLY ============
+        .tiguan{           
+            span{
+                width: 100%;
+            }
+        }
+
+        .t-roc{
+            span{
+                width: 100%;
+            }
+        }
+        .modelle{
+            align-items: flex-end;
+            padding-top: 10%;
+            span{
+                width: 100%;
+            }
+        }
+        .taigo{
+            align-items: center;
+            padding-bottom: 5%;
+            span{
+                width: 100%;
+                .text{
+                    p{
+                        b{
+                            font-size: $p-mo;
+                        }
+                    }
+                    h2{
+                        font-weight: lighter;
+                        font-size: $fs3;
+                    }
+                }
+            }
+        }
+            }
+        }
+    }
+}

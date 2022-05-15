@@ -145,3 +145,58 @@ main{
         }
     }
 }
+
+// ========================== media query header =================
+@media only screen and (max-width:700px){
+    main{
+        .used{
+            h1{
+                font-size: $p-mo;
+            }
+            .plus-content{
+                width: 100%;
+                a{
+                    font-size: $fs3;
+                }
+            }
+            .accordions{
+                flex-wrap: wrap;
+                select{
+                    width: 100%;
+                    font-size: $fs3;
+                    background-size: 3vw;
+                    margin-bottom: 6%;
+                }
+            }
+            form{
+                width: 100%;
+                input[type=search]{
+                    font-size: $fs3;
+                    width: 50%;
+                }
+                .checkBox{
+                    width: 40%;
+                    .checkboxInputCon{
+                        padding: 7%;
+                        
+                    }
+                    label{
+                        font-size: calc($fs3 - 0.3vw);
+                    }
+
+                }
+            }
+            .btn{
+                width: 80%;
+                margin-top: 4%;
+                button{
+                    font-size: $fs3;
+                    width: 50%;
+                }
+                a{
+                    font-size: $fs3;
+                }
+            }
+        }
+    }
+}
