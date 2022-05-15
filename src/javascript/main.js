@@ -134,3 +134,32 @@ let up3 = () => {
         arrowUp3.style.display = "block"
     }
 }
+
+// ========================= NeuigKeiten ====================
+let textNeuig1 = document.querySelector(".img-text1")
+let textNeuig2 = document.querySelector(".img-text2")
+let textNeuig3 = document.querySelector(".img-text3")
+textNeuig1.style.display = "block"
+textNeuig2.style.display = "block"
+textNeuig3.style.display = "block"
+let iX4 = () => {
+    if (textNeuig1.style.display === "block") {
+        textNeuig1.style.display = "none"
+    } else {
+        textNeuig1.style.display = "block"
+    }
+}
+let iX5 = () => {
+    if (textNeuig2.style.display === "block") {
+        textNeuig2.style.display = "none"
+    } else {
+        textNeuig2.style.display = "block"
+    }
+}
+let iX6 = () => {
+    if (textNeuig3.style.display === "block") {
+        textNeuig3.style.display = "none"
+    } else {
+        textNeuig3.style.display = "block"
+    }
+}
