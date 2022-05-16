@@ -39,13 +39,13 @@ let arrowDown2 = document.querySelector(".down2")
 let arrowDown3 = document.querySelector(".down3")
 arrowDown1.style.display = "block"
 arrowUp1.style.display = "none"
-text1.style.height = "4vw"
-text2.style.height = "4vw"
-text3.style.height = "4vw"
+text1.style.height = "10%"
+text2.style.height = "10%"
+text3.style.height = "12%"
 // ================== pic 1==========
 let down1 = () => {
-    if (text1.style.height === "4vw") {
-        setTimeout(() => (text1.style.height = "7vw"), 500)
+    if (text1.style.height === "10%") {
+        setTimeout(() => (text1.style.height = "29%"), 500)
         text1.style.animationName = "down1"
         text1.style.animationDuration = "2s"
         arrowDown1.style.display = "none"
@@ -54,21 +54,21 @@ let down1 = () => {
         arrowUp1.style.color = "white"
 
     } else {
-        text1.style.height = "4vw"
+        text1.style.height = "10%"
         arrowDown1.style.display = "block"
         arrowUp1.style.display = "none"
     }
 }
 let up1 = () => {
-    if (text1.style.height === "7vw") {
-        setTimeout(() => (text1.style.height = "4vw"), 500)
+    if (text1.style.height === "29%") {
+        setTimeout(() => (text1.style.height = "10%"), 500)
         text1.style.animationName = "up1"
         text1.style.animationDuration = "2s"
         arrowDown1.style.display = "block"
         arrowUp1.style.display = "none"
         
     } else {
-        text1.style.height = "7vw"
+        text1.style.height = "29%"
         arrowDown1.style.display = "none"
         arrowUp1.style.display = "block"
     }
@@ -76,8 +76,8 @@ let up1 = () => {
 // =============== pic 2=============
 // =============================
 let down2 = () => {
-    if (text2.style.height === "4vw") {
-        setTimeout(() => (text2.style.height = "10vw"), 500)
+    if (text2.style.height === "10%") {
+        setTimeout(() => (text2.style.height = "37%"), 500)
         text2.style.animationName = "down2"
         text2.style.animationDuration = "2s"
         arrowDown2.style.display = "none"
@@ -86,28 +86,28 @@ let down2 = () => {
         arrowUp2.style.color = "white"
 
     } else {
-        text2.style.height = "4vw"
+        text2.style.height = "10%"
         arrowDown2.style.display = "block"
         arrowUp2.style.display = "none"
     }
 }
 let up2 = () => {
-    if (text2.style.height === "10vw") {
-        setTimeout(() => (text2.style.height = "4vw"), 500)
+    if (text2.style.height === "37%") {
+        setTimeout(() => (text2.style.height = "10%"), 500)
         text2.style.animationName = "up2"
         text2.style.animationDuration = "2s"
         arrowDown2.style.display = "block"
         arrowUp2.style.display = "none"
     } else {
-        text2.style.height = "10vw"
+        text2.style.height = "37%"
         arrowDown2.style.display = "none"
         arrowUp2.style.display = "block"
     }
 }
 // ================= pic3 ===========
 let down3 = () => {
-    if (text3.style.height === "4vw") {
-        setTimeout(() => (text3.style.height = "12vw"), 500)
+    if (text3.style.height === "12%") {
+        setTimeout(() => (text3.style.height = "45%"), 500)
         text3.style.animationName = "down3"
         text3.style.animationDuration = "2s"
         arrowDown3.style.display = "none"
@@ -116,20 +116,20 @@ let down3 = () => {
         arrowUp3.style.color = "white"
 
     } else {
-        text3.style.height = "4vw"
+        text3.style.height = "12%"
         arrowDown3.style.display = "block"
         arrowUp3.style.display = "none"
     }
 }
 let up3 = () => {
-    if (text3.style.height === "12vw") {
-        setTimeout(() => (text3.style.height = "4vw"), 500)
+    if (text3.style.height === "45%") {
+        setTimeout(() => (text3.style.height = "12%"), 500)
         text3.style.animationName = "up3"
         text3.style.animationDuration = "2s"
         arrowDown3.style.display = "block"
         arrowUp3.style.display = "none"
     } else {
-        text3.style.height = "12vw"
+        text3.style.height = "45%"
         arrowDown3.style.display = "none"
         arrowUp3.style.display = "block"
     }
