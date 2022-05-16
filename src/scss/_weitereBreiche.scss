@@ -73,3 +73,38 @@ main{
         }
     }
 }
+
+//  ======================= Media query ===============
+@media only screen and (max-width:700px){
+    main{
+        .weitere{
+            h1{
+                font-size: $h1-mo;
+            }
+            .weitere-con{
+                flex-wrap: wrap;
+                padding: 0;
+                .bg-color{
+                    width: 100%;
+                }
+                .text{
+                    width: 100%;
+                    padding: 3% 2%;
+                    p{
+                        font-size: $p-mo;
+                    }
+                    h1{
+                        font-size: $h1-mo;
+                    }
+                    button{
+                        font-size: $fs3;
+                        margin-top: 3%;
+                    }
+                }
+                .img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

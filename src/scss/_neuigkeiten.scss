@@ -177,3 +177,107 @@ main{
         }
     }
 }
+//  ======================= Media query ===============
+@media only screen and (max-width:700px){
+    main{
+        .neuigkeiten{
+            h1{
+                font-size: $h1-mo;
+            }
+            .neuigkeiten-con{
+                .bg-color{
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+                .top{
+                    flex-wrap: wrap;
+                    span{
+                        &:first-child{
+                            width: 100%;
+                            padding-top: 0%;
+                        }
+                        &:last-child{
+                            width: 100%;
+                        }
+                        .img{
+                            .img-text{
+                                ul{
+                                    padding-left: 4%;
+                                    li{
+                                        font-size: $fs3;
+                                    }
+                                }
+                            }
+                        }
+                        .text{
+                            padding: 5% 0;
+                            text-align: center;
+                            p{
+                                font-size: $p-mo;
+                            }
+                            h2{
+                                font-size: calc($h1-mo - 1vw);
+                            }
+                            a{
+                                font-size: $fs3;
+                            }
+                            
+                        }
+                        &:last-child{
+                            .text{
+                                p{
+                                    color: white;
+                                }
+                                h2{
+                                    color: white;
+                                }
+                                a{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                // ============ bottom ==========
+                .bottom{
+                    width: 100%;
+                    span{
+                        .img{
+                            .img-text{
+                                ul{
+                                    padding-left: 4%;
+                                    li{
+                                        font-size: $fs3;
+                                    }
+                                }
+                                i{
+                                    font-size: $p-mo;
+                                }
+                            }
+                        }
+                        .text{
+                            padding: 5% 2%;
+                            text-align: center;
+                            p{
+                                font-size: $p-mo;
+                                color: white;
+                                text-align: center;
+                                width: 100%;
+                            }
+                            h2{
+                                font-size: calc($h1-mo - 1vw);
+                                color: white;
+                            }
+                            a{
+                                color: white;
+                                font-size: $fs3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

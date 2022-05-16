@@ -39,3 +39,25 @@ main{
         }
     }
 }
+
+//  ======================= Media query ===============
+@media only screen and (max-width:700px){
+    main{
+        .grid{
+            flex-wrap: wrap;
+            .left,.mid,.right{
+                width: 100%;
+                span{
+                    .text{
+                        p{
+                            font-size: $p-mo;
+                        }
+                        a{
+                            font-size: $fs3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
