@@ -15,13 +15,27 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            cursor: pointer;
+            user-select: none;
             i{
                 font-size: calc($p + 0.2vw);
                 color: white;
+                transition: 0.7s;
             }
             p{
                 font-size: $sm;
                 color: white;
+                transition: 0.7s;
+            }
+            &:hover{
+                i{
+                    color: skyblue;
+                    transition: 0.7s;
+                }
+                p{
+                    color: skyblue;
+                    transition: 0.7s;
+                }
             }
         }
         // =========== header icons ======
