@@ -16,9 +16,9 @@ let openBtn = () => {
 };
 let closeBtn = () => {
   if (open.style.display === "block") {
-      setTimeout(() => (open.style.display = "none"), 1000)
+      setTimeout(() => (open.style.display = "none"), 500)
       open.style.animationName = "close"
-      open.style.animationDuration = "1s"
+      open.style.animationDuration = "0.5s"
     //   ========
       menu1.style.display = "none";
 menu2.style.display = "none";
