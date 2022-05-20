@@ -56,39 +56,43 @@
           </div>
         </div>
         <!-- ************************************************** -->
-          <div class="mainCon">
-            <!-- *************** ul ************ -->
-            <ul class="ul-left">
-              <li><a href="#">Modelle und Konfigurator</a> <i class="fa-solid fa-angle-right"></i> </li>
-              <li><a href="#">Angebote und Produkte</a> <i class="fa-solid fa-angle-right"></i> </li>
-              <li><a href="#">Elektroautos und Hybridautos</a> <i class="fa-solid fa-angle-right"></i> </li>
-              <li><a href="#">Konnektivität und Mobilitätsdienste</a> <i class="fa-solid fa-angle-right"></i> </li>
-              <li><a href="#">Marke und Erlebnis</a> <i class="fa-solid fa-angle-right"></i> </li>
-              <li><a href="#">Besitzer und Nutzer</a> <i class="fa-solid fa-angle-right"></i> </li>
-            </ul>
-            <div class="right">
-              <!-- ************** ul right ************** -->
-              <ul class="ul-right">
-                <p>Top-Links</p>
-                <li><a href="#">Elektrofahrzeuge</a></li>
-                <li><a href="#">Hybridfahrzeuge</a></li>
-                <li><a href="#">Verbrennerfahrzeuge</a></li>
-                <li><a href="#">Verfügbare Neu-, Jahres- und Gebrauchtwagen</a></li>
-                <li><a href="#">ID. Online Leasing</a></li>
+          <div class="container">
+           <div class="main-con">
+              <!-- *************** ul ************ -->
+              <ul class="ul-left">
+                <li onclick="list1()"><a >Modelle und Konfigurator</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list2()"><a >Angebote und Produkte</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list3()"><a >Elektroautos und Hybridautos</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list4()"><a >Konnektivität und Mobilitätsdienste</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list5()"><a >Marke und Erlebnis</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list6()"><a >Besitzer und Nutzer</a> <i class="fa-solid fa-angle-right"></i> </li>
               </ul>
-              <div class="img">
-                <a ><img src="./images/menu-img.jpeg" alt=""></a>
-                <p>Das Volkswagen AutoAbo</p>
+              <div class="right">
+                <!-- ************** ul right ************** -->
+                <ul class="ul-right">
+                  <p>Top-Links</p>
+                  <li><a href="#">Elektrofahrzeuge</a></li>
+                  <li><a href="#">Hybridfahrzeuge</a></li>
+                  <li><a href="#">Verbrennerfahrzeuge</a></li>
+                  <li><a href="#">Verfügbare Neu-, Jahres- und Gebrauchtwagen</a></li>
+                  <li><a href="#">ID. Online Leasing</a></li>
+                </ul>
+                <div class="img">
+                  <a ><img src="./images/menu-img.jpeg" alt=""></a>
+                  <p>Das Volkswagen AutoAbo</p>
+                </div>
               </div>
-            </div>
+           </div>
           </div>
        <!-- *************************** links *************** -->
        <ul class="ul-links">
-        <li><a href="#">Impressum</a></li> <span>|</span>
-        <li><a href="#">Nutzungsbedingungen</a></li>  <span>|</span>
-        <li><a href="#">Datenschutzerklärungen</a></li>  <span>|</span>
-        <li><a href="#">Cookie-Richtlinie</a></li>  <span>|</span>
-        <li><a href="#">Lizenzhinweise Dritter</a></li>  
+        <div class="ul-links-con">
+          <li><a href="#">Impressum</a></li> <span>|</span>
+          <li><a href="#">Nutzungsbedingungen</a></li>  <span>|</span>
+          <li><a href="#">Datenschutzerklärungen</a></li>  <span>|</span>
+          <li><a href="#">Cookie-Richtlinie</a></li>  <span>|</span>
+          <li><a href="#">Lizenzhinweise Dritter</a></li> 
+        </div> 
        </ul>
       </div>
     </div>
@@ -96,7 +100,7 @@
     <div class="menu1">
       <div class="menu-con">
         <!-- ************************* -->
-        <div class="back-btn">
+        <div onclick="back1()" class="back-btn">
           <div class="back-btn-con">
             <i class="fa-solid fa-arrow-left"></i>
             <p>Zurück</p>
@@ -133,7 +137,7 @@
     <div class="menu2">
       <div class="menu-con">
         <!-- ************************* -->
-        <div class="back-btn">
+        <div onclick="back2()" class="back-btn">
           <div class="back-btn-con">
             <i class="fa-solid fa-arrow-left"></i>
             <p>Zurück</p>
@@ -169,7 +173,7 @@
     <div class="menu3">
       <div class="menu-con">
         <!-- ************************* -->
-        <div class="back-btn">
+        <div onclick="back3()" class="back-btn">
          <div class="back-btn-con">
             <i class="fa-solid fa-arrow-left"></i>
             <p>Zurück</p>
@@ -205,7 +209,7 @@
     <div class="menu4">
       <div class="menu-con">
         <!-- ************************* -->
-        <div class="back-btn">
+        <div onclick="back4()" class="back-btn">
           <div class="back-btn-con">
             <i class="fa-solid fa-arrow-left"></i>
             <p>Zurück</p>
@@ -241,7 +245,7 @@
     <div class="menu5">
       <div class="menu-con">
         <!-- ************************* -->
-        <div class="back-btn">
+        <div onclick="back5()" class="back-btn">
         <div class="back-btn-con">
             <i class="fa-solid fa-arrow-left"></i>
             <p>Zurück</p>
@@ -277,7 +281,7 @@
     <div class="menu6">
       <div class="menu-con">
         <!-- ************************* -->
-        <div class="back-btn">
+        <div onclick="back6()" class="back-btn">
          <div class="back-btn-con">
             <i class="fa-solid fa-arrow-left"></i>
             <p>Zurück</p>

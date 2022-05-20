@@ -35,8 +35,9 @@
             }
         }
         // =============== main-con =========
-        .mainCon{
-            padding: 4%;
+        .container{
+            .main-con{
+                padding: 4%;
             display: flex;
             justify-content: space-between;
             // display: none;
@@ -48,7 +49,7 @@
                     width: 100%;
                     justify-content: space-between;
                     align-items: center;
-                    
+                    cursor: pointer;
                     a{
                         color: white;
                         display: flex;
@@ -56,14 +57,17 @@
                         font-size: calc($p + 0.4vw);
                         text-decoration: none;
                         transition: 0.7s;
-                        &:hover{
-                            color: skyblue;
-                            transition: 0.7s;
-                        }
+                       
                     }
                     i{
                         font-size: $p;
                         color: white;
+                    }
+                    &:hover{
+                       a{
+                        color: skyblue;
+                        transition: 0.7s;
+                       }
                     }
                 }
             }
@@ -123,10 +127,12 @@
                     }
                 }
             }
+            }
         }
         // ================ links =========
         .ul-links{
             width: 50%;
+          .ul-links-con{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -154,6 +160,7 @@
                 color: white;
                 font-size: $p;
             }
+          }
         }
     }
 }
