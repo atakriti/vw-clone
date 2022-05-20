@@ -3,7 +3,9 @@ let open = document.querySelector(".hamburger");
 open.style.display = "none";
 let openBtn = () => {
   if (open.style.display === "none") {
-    open.style.display = "block";
+      open.style.display = "block";
+      ulCon.style.display = "block"
+      ulLinks.style.display = "block"
   } else {
     open.style.display = "none";
   }
@@ -49,8 +51,8 @@ let list1 = () => {
     menu4.style.display = "none";
     menu5.style.display = "none";
     menu6.style.display = "none";
-    //     ulCon.style.display = "none"
-    // ulLinks.style.display = "none"
+        ulCon.style.display = "none"
+    ulLinks.style.display = "none"
   } else {
     menu1.style.display = "none";
     // ulCon.style.display = "block"
@@ -65,8 +67,8 @@ let list2 = () => {
     menu4.style.display = "none";
     menu5.style.display = "none";
     menu6.style.display = "none";
-    //     ulCon.style.display = "none"
-    // ulLinks.style.display = "none"
+        ulCon.style.display = "none"
+    ulLinks.style.display = "none"
   } else {
     menu2.style.display = "none";
     // ulCon.style.display = "block"
@@ -81,8 +83,8 @@ let list3 = () => {
     menu4.style.display = "none";
     menu5.style.display = "none";
     menu6.style.display = "none";
-    //     ulCon.style.display = "none"
-    // ulLinks.style.display = "none"
+        ulCon.style.display = "none"
+    ulLinks.style.display = "none"
   } else {
     menu3.style.display = "none";
     // ulCon.style.display = "block"
@@ -97,8 +99,8 @@ let list4 = () => {
     menu3.style.display = "none";
     menu5.style.display = "none";
     menu6.style.display = "none";
-    //     ulCon.style.display = "none"
-    // ulLinks.style.display = "none"
+        ulCon.style.display = "none"
+    ulLinks.style.display = "none"
   } else {
     menu4.style.display = "none";
     // ulCon.style.display = "block"
@@ -113,8 +115,8 @@ let list5 = () => {
     menu3.style.display = "none";
     menu4.style.display = "none";
     menu6.style.display = "none";
-    //     ulCon.style.display = "none"
-    // ulLinks.style.display = "none"
+        ulCon.style.display = "none"
+    ulLinks.style.display = "none"
   } else {
     menu5.style.display = "none";
     // ulCon.style.display = "block"
@@ -129,8 +131,8 @@ let list6 = () => {
     menu3.style.display = "none";
     menu4.style.display = "none";
     menu5.style.display = "none";
-    //     ulCon.style.display = "none"
-    // ulLinks.style.display = "none"
+        ulCon.style.display = "none"
+    ulLinks.style.display = "none"
   } else {
     menu6.style.display = "none";
     // ulCon.style.display = "block"
@@ -141,6 +143,8 @@ let list6 = () => {
 let back1= () => {
     if (menu1.style.display === "block") {
         menu1.style.display = "none"
+         ulCon.style.display = "block"
+    ulLinks.style.display = "block"
     } else {
         menu1.style.display = "block"
         
@@ -149,6 +153,8 @@ let back1= () => {
 let back2 = () => {
     if (menu2.style.display === "block") {
         menu2.style.display = "none"
+        ulCon.style.display = "block"
+        ulLinks.style.display = "block"
     } else {
         menu2.style.display = "block"
         
@@ -157,6 +163,8 @@ let back2 = () => {
 let back3 = () => {
     if (menu3.style.display === "block") {
         menu3.style.display = "none"
+        ulCon.style.display = "block"
+        ulLinks.style.display = "block"
     } else {
         menu3.style.display = "block"
         
@@ -165,6 +173,8 @@ let back3 = () => {
 let back4 = () => {
     if (menu4.style.display === "block") {
         menu4.style.display = "none"
+        ulCon.style.display = "block"
+        ulLinks.style.display = "block"
     } else {
         menu4.style.display = "block"
         
@@ -173,6 +183,8 @@ let back4 = () => {
 let back5 = () => {
     if (menu5.style.display === "block") {
         menu5.style.display = "none"
+        ulCon.style.display = "block"
+        ulLinks.style.display = "block"
     } else {
         menu5.style.display = "block"
         
@@ -181,6 +193,8 @@ let back5 = () => {
 let back6 = () => {
     if (menu6.style.display === "block") {
         menu6.style.display = "none"
+        ulCon.style.display = "block"
+        ulLinks.style.display = "block"
     } else {
         menu6.style.display = "block"
         
