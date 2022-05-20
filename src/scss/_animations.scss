@@ -49,3 +49,49 @@
         height: 12%;
     }
 } 
+
+// ============================================ menu =======================
+@keyframes open {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes close {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+// =====
+@keyframes listOpen {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes back {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes opa {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
