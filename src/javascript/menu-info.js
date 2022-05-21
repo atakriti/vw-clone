@@ -1,6 +1,6 @@
 // the open menu
 let open = document.querySelector(".hamburger");
-open.style.display = "none";
+open.style.display = "block";
 let openBtn = () => {
   if (open.style.display === "none") {
       setTimeout(() => (open.style.display = "block"), 100)
@@ -61,8 +61,8 @@ let list1 = () => {
     menu4.style.display = "none";
     menu5.style.display = "none";
       menu6.style.display = "none";
-      setTimeout(() => (ulCon.style.display = "none"), 500)
-      setTimeout(() => (ulLinks.style.display = "none"), 500)
+      setTimeout(() => (ulCon.style.display = "none"), 100)
+      setTimeout(() => (ulLinks.style.display = "none"), 100)
     
     
   } else {
@@ -83,8 +83,8 @@ let list2 = () => {
     menu4.style.display = "none";
     menu5.style.display = "none";
     menu6.style.display = "none";
-    setTimeout(() => (ulCon.style.display = "none"), 500)
-    setTimeout(() => (ulLinks.style.display = "none"), 500)
+    setTimeout(() => (ulCon.style.display = "none"), 100)
+    setTimeout(() => (ulLinks.style.display = "none"), 100)
   } else {
     menu2.style.display = "none";
     // ulCon.style.display = "block"
@@ -103,8 +103,8 @@ let list3 = () => {
     menu4.style.display = "none";
     menu5.style.display = "none";
     menu6.style.display = "none";
-    setTimeout(() => (ulCon.style.display = "none"), 500)
-    setTimeout(() => (ulLinks.style.display = "none"), 500)
+    setTimeout(() => (ulCon.style.display = "none"), 100)
+    setTimeout(() => (ulLinks.style.display = "none"), 100)
   } else {
     menu3.style.display = "none";
     // ulCon.style.display = "block"
@@ -123,8 +123,8 @@ let list4 = () => {
     menu3.style.display = "none";
     menu5.style.display = "none";
     menu6.style.display = "none";
-    setTimeout(() => (ulCon.style.display = "none"), 500)
-    setTimeout(() => (ulLinks.style.display = "none"), 500)
+    setTimeout(() => (ulCon.style.display = "none"), 100)
+    setTimeout(() => (ulLinks.style.display = "none"), 100)
   } else {
     menu4.style.display = "none";
     // ulCon.style.display = "block"
@@ -143,8 +143,8 @@ let list5 = () => {
     menu3.style.display = "none";
     menu4.style.display = "none";
     menu6.style.display = "none";
-    setTimeout(() => (ulCon.style.display = "none"), 500)
-    setTimeout(() => (ulLinks.style.display = "none"), 500)
+    setTimeout(() => (ulCon.style.display = "none"), 100)
+    setTimeout(() => (ulLinks.style.display = "none"), 100)
   } else {
     menu5.style.display = "none";
     // ulCon.style.display = "block"
@@ -163,8 +163,8 @@ let list6 = () => {
     menu3.style.display = "none";
     menu4.style.display = "none";
     menu5.style.display = "none";
-    setTimeout(() => (ulCon.style.display = "none"), 500)
-    setTimeout(() => (ulLinks.style.display = "none"), 500)
+    setTimeout(() => (ulCon.style.display = "none"), 100)
+    setTimeout(() => (ulLinks.style.display = "none"), 100)
   } else {
     menu6.style.display = "none";
     // ulCon.style.display = "block"

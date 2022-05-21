@@ -131,3 +131,45 @@
         }
 }
 }
+
+// ================================= media query ====================
+@media only screen and (max-width:$mq) {
+    .menu1,.menu2,.menu3,.menu4,.menu5,.menu6{
+        padding: 1%;
+        width: 60%;
+        .menu-con{
+            .back-btn{
+                width: 30%;
+                border: 0.1vw black solid;
+                border-radius: 20px;
+                padding: 2%;
+                margin-bottom: 3%;
+                .back-btn-con{
+                    i{
+                        font-size: $fs3;
+                    }
+                    p{
+                        font-size: $fs3;
+                    }
+                }
+            }
+            .ul-con{
+                .ul-menu-left{
+                    width: 100%;
+                    line-height: 3;
+                    p{
+                        font-size: $fs3;
+                    }
+                    li{
+                        a{
+                            font-size: $fs3;
+                        }
+                    }
+                }
+                .right{
+                    display: none;
+                }
+            }
+        }
+    }
+}
