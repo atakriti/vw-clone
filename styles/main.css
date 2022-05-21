@@ -1,0 +1,1572 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap");
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8470588235), rgba(0, 0, 0, 0.6901960784), rgba(0, 0, 0, 0.4941176471), rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0));
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4% 0 4%;
+}
+header nav .menu {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+header nav .menu i {
+  font-size: 1.2vw;
+  color: white;
+  transition: 0.7s;
+}
+header nav .menu p {
+  font-size: 0.9vw;
+  color: white;
+  transition: 0.7s;
+}
+header nav .menu:hover i {
+  color: skyblue;
+  transition: 0.7s;
+}
+header nav .menu:hover p {
+  color: skyblue;
+  transition: 0.7s;
+}
+header nav .header-icon {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .header-icon i {
+  font-size: 1.2vw;
+  color: white;
+}
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo .line-left {
+  width: 70%;
+  background-color: white;
+  height: 0.15vw;
+}
+header .logo svg {
+  fill: white;
+  width: 3vw;
+  height: 3vw;
+  margin: 0 1%;
+}
+header .logo .line-right {
+  width: 28%;
+  background-color: white;
+  height: 0.15vw;
+}
+
+@media only screen and (max-width: 800px) {
+  header nav {
+    padding: 4% 4% 0 4%;
+  }
+  header nav .menu {
+    width: 23%;
+  }
+  header nav .menu i {
+    font-size: 5vw;
+  }
+  header nav .menu p {
+    font-size: 5vw;
+  }
+  header nav .header-icon {
+    width: 15%;
+  }
+  header nav .header-icon i {
+    font-size: 5vw;
+  }
+  header .logo .line-left, header .logo .line-right {
+    width: 49%;
+  }
+  header .logo svg {
+    width: 7vw;
+    height: 7vw;
+  }
+}
+.hamburger {
+  background: linear-gradient(to right, rgb(0, 67, 122), rgb(17, 99, 167));
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  overflow: scroll;
+}
+.hamburger .hamburger-con {
+  padding: 1% 3%;
+}
+.hamburger .hamburger-con .close-btn {
+  width: 10%;
+  user-select: none;
+}
+.hamburger .hamburger-con .close-btn .close-btn-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .close-btn .close-btn-con i {
+  font-size: 1vw;
+}
+.hamburger .hamburger-con .close-btn .close-btn-con p {
+  font-size: 1vw;
+}
+.hamburger .hamburger-con .close-btn:hover .close-btn-con {
+  color: skyblue;
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .container .main-con {
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+.hamburger .hamburger-con .container .main-con .ul-left {
+  width: 50%;
+}
+.hamburger .hamburger-con .container .main-con .ul-left li {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.hamburger .hamburger-con .container .main-con .ul-left li a {
+  color: white;
+  display: flex;
+  padding: 3% 0;
+  font-size: 1.4vw;
+  text-decoration: none;
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .container .main-con .ul-left li i {
+  font-size: 1vw;
+  color: white;
+}
+.hamburger .hamburger-con .container .main-con .ul-left li:hover a {
+  color: skyblue;
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .container .main-con .right {
+  width: 30%;
+  border-left: 0.1vw white solid;
+  padding: 2%;
+}
+.hamburger .hamburger-con .container .main-con .right .ul-right p {
+  color: white;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.hamburger .hamburger-con .container .main-con .right .ul-right li {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.hamburger .hamburger-con .container .main-con .right .ul-right li a {
+  color: white;
+  display: flex;
+  padding: 3% 0;
+  font-size: 1vw;
+  text-decoration: none;
+  transition: 0.7s;
+  display: flex;
+}
+.hamburger .hamburger-con .container .main-con .right .ul-right li a:hover {
+  color: skyblue;
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .container .main-con .right .img a {
+  display: flex;
+  overflow: hidden;
+}
+.hamburger .hamburger-con .container .main-con .right .img a img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+.hamburger .hamburger-con .container .main-con .right .img a img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .container .main-con .right .img p {
+  color: white;
+  font-size: 1vw;
+  margin-top: 6%;
+}
+.hamburger .hamburger-con .ul-links {
+  width: 50%;
+}
+.hamburger .hamburger-con .ul-links .ul-links-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger .hamburger-con .ul-links .ul-links-con li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.hamburger .hamburger-con .ul-links .ul-links-con li a {
+  display: flex;
+  padding: 2%;
+  color: white;
+  font-size: 0.7vw;
+  text-decoration: none;
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .ul-links .ul-links-con li a:hover {
+  color: skyblue;
+  transition: 0.7s;
+}
+.hamburger .hamburger-con .ul-links .ul-links-con span {
+  color: white;
+  font-size: 1vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .hamburger .hamburger-con {
+    padding: 3%;
+  }
+  .hamburger .hamburger-con .close-btn {
+    width: 30%;
+  }
+  .hamburger .hamburger-con .close-btn .close-btn-con i {
+    font-size: 3vw;
+  }
+  .hamburger .hamburger-con .close-btn .close-btn-con p {
+    font-size: 3vw;
+  }
+  .hamburger .hamburger-con .container .main-con .ul-left {
+    width: 70%;
+    line-height: 4;
+  }
+  .hamburger .hamburger-con .container .main-con .ul-left li a {
+    font-size: 3vw;
+  }
+  .hamburger .hamburger-con .container .main-con .ul-left li i {
+    font-size: 3vw;
+  }
+  .hamburger .hamburger-con .container .main-con .right {
+    display: none;
+  }
+  .hamburger .hamburger-con .ul-links {
+    width: 100%;
+    border: 0.1vw white solid;
+    border-radius: 20px;
+    padding: 2%;
+  }
+  .hamburger .hamburger-con .ul-links .ul-links-con {
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 3;
+  }
+  .hamburger .hamburger-con .ul-links .ul-links-con li {
+    width: 40%;
+    margin-right: 4%;
+    white-space: nowrap;
+  }
+  .hamburger .hamburger-con .ul-links .ul-links-con li a {
+    font-size: 2.4vw;
+  }
+  .hamburger .hamburger-con .ul-links .ul-links-con span {
+    display: none;
+  }
+}
+.menu1, .menu2, .menu3, .menu4, .menu5, .menu6 {
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  z-index: 1;
+}
+.menu1 .menu-con, .menu2 .menu-con, .menu3 .menu-con, .menu4 .menu-con, .menu5 .menu-con, .menu6 .menu-con {
+  padding: 1% 3%;
+}
+.menu1 .menu-con .back-btn, .menu2 .menu-con .back-btn, .menu3 .menu-con .back-btn, .menu4 .menu-con .back-btn, .menu5 .menu-con .back-btn, .menu6 .menu-con .back-btn {
+  width: 10%;
+}
+.menu1 .menu-con .back-btn .back-btn-con, .menu2 .menu-con .back-btn .back-btn-con, .menu3 .menu-con .back-btn .back-btn-con, .menu4 .menu-con .back-btn .back-btn-con, .menu5 .menu-con .back-btn .back-btn-con, .menu6 .menu-con .back-btn .back-btn-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.menu1 .menu-con .back-btn .back-btn-con i, .menu2 .menu-con .back-btn .back-btn-con i, .menu3 .menu-con .back-btn .back-btn-con i, .menu4 .menu-con .back-btn .back-btn-con i, .menu5 .menu-con .back-btn .back-btn-con i, .menu6 .menu-con .back-btn .back-btn-con i {
+  font-size: 1vw;
+}
+.menu1 .menu-con .back-btn .back-btn-con p, .menu2 .menu-con .back-btn .back-btn-con p, .menu3 .menu-con .back-btn .back-btn-con p, .menu4 .menu-con .back-btn .back-btn-con p, .menu5 .menu-con .back-btn .back-btn-con p, .menu6 .menu-con .back-btn .back-btn-con p {
+  font-size: 1vw;
+}
+.menu1 .menu-con .back-btn:hover .back-btn-con, .menu2 .menu-con .back-btn:hover .back-btn-con, .menu3 .menu-con .back-btn:hover .back-btn-con, .menu4 .menu-con .back-btn:hover .back-btn-con, .menu5 .menu-con .back-btn:hover .back-btn-con, .menu6 .menu-con .back-btn:hover .back-btn-con {
+  color: skyblue;
+  transition: 0.7s;
+}
+.menu1 .menu-con .ul-con, .menu2 .menu-con .ul-con, .menu3 .menu-con .ul-con, .menu4 .menu-con .ul-con, .menu5 .menu-con .ul-con, .menu6 .menu-con .ul-con {
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu1 .menu-con .ul-con .ul-menu-left, .menu2 .menu-con .ul-con .ul-menu-left, .menu3 .menu-con .ul-con .ul-menu-left, .menu4 .menu-con .ul-con .ul-menu-left, .menu5 .menu-con .ul-con .ul-menu-left, .menu6 .menu-con .ul-con .ul-menu-left {
+  width: 50%;
+}
+.menu1 .menu-con .ul-con .ul-menu-left p, .menu2 .menu-con .ul-con .ul-menu-left p, .menu3 .menu-con .ul-con .ul-menu-left p, .menu4 .menu-con .ul-con .ul-menu-left p, .menu5 .menu-con .ul-con .ul-menu-left p, .menu6 .menu-con .ul-con .ul-menu-left p {
+  font-size: 1vw;
+  font-weight: bold;
+  color: black;
+}
+.menu1 .menu-con .ul-con .ul-menu-left li, .menu2 .menu-con .ul-con .ul-menu-left li, .menu3 .menu-con .ul-con .ul-menu-left li, .menu4 .menu-con .ul-con .ul-menu-left li, .menu5 .menu-con .ul-con .ul-menu-left li, .menu6 .menu-con .ul-con .ul-menu-left li {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu1 .menu-con .ul-con .ul-menu-left li a, .menu2 .menu-con .ul-con .ul-menu-left li a, .menu3 .menu-con .ul-con .ul-menu-left li a, .menu4 .menu-con .ul-con .ul-menu-left li a, .menu5 .menu-con .ul-con .ul-menu-left li a, .menu6 .menu-con .ul-con .ul-menu-left li a {
+  color: black;
+  display: flex;
+  padding: 3% 0;
+  font-size: 1.4vw;
+  text-decoration: none;
+  transition: 0.7s;
+}
+.menu1 .menu-con .ul-con .ul-menu-left li a:hover, .menu2 .menu-con .ul-con .ul-menu-left li a:hover, .menu3 .menu-con .ul-con .ul-menu-left li a:hover, .menu4 .menu-con .ul-con .ul-menu-left li a:hover, .menu5 .menu-con .ul-con .ul-menu-left li a:hover, .menu6 .menu-con .ul-con .ul-menu-left li a:hover {
+  color: skyblue;
+  transition: 0.7s;
+}
+.menu1 .menu-con .ul-con .right, .menu2 .menu-con .ul-con .right, .menu3 .menu-con .ul-con .right, .menu4 .menu-con .ul-con .right, .menu5 .menu-con .ul-con .right, .menu6 .menu-con .ul-con .right {
+  width: 30%;
+  border-left: 0.1vw white solid;
+  padding-left: 2%;
+}
+.menu1 .menu-con .ul-con .right .ul-menu-right, .menu2 .menu-con .ul-con .right .ul-menu-right, .menu3 .menu-con .ul-con .right .ul-menu-right, .menu4 .menu-con .ul-con .right .ul-menu-right, .menu5 .menu-con .ul-con .right .ul-menu-right, .menu6 .menu-con .ul-con .right .ul-menu-right {
+  padding: 2%;
+}
+.menu1 .menu-con .ul-con .right .ul-menu-right p, .menu2 .menu-con .ul-con .right .ul-menu-right p, .menu3 .menu-con .ul-con .right .ul-menu-right p, .menu4 .menu-con .ul-con .right .ul-menu-right p, .menu5 .menu-con .ul-con .right .ul-menu-right p, .menu6 .menu-con .ul-con .right .ul-menu-right p {
+  color: black;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.menu1 .menu-con .ul-con .right .ul-menu-right li, .menu2 .menu-con .ul-con .right .ul-menu-right li, .menu3 .menu-con .ul-con .right .ul-menu-right li, .menu4 .menu-con .ul-con .right .ul-menu-right li, .menu5 .menu-con .ul-con .right .ul-menu-right li, .menu6 .menu-con .ul-con .right .ul-menu-right li {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.menu1 .menu-con .ul-con .right .ul-menu-right li a, .menu2 .menu-con .ul-con .right .ul-menu-right li a, .menu3 .menu-con .ul-con .right .ul-menu-right li a, .menu4 .menu-con .ul-con .right .ul-menu-right li a, .menu5 .menu-con .ul-con .right .ul-menu-right li a, .menu6 .menu-con .ul-con .right .ul-menu-right li a {
+  color: black;
+  display: flex;
+  padding: 3% 0;
+  font-size: 1vw;
+  text-decoration: none;
+  transition: 0.7s;
+  display: flex;
+}
+.menu1 .menu-con .ul-con .right .ul-menu-right li a:hover, .menu2 .menu-con .ul-con .right .ul-menu-right li a:hover, .menu3 .menu-con .ul-con .right .ul-menu-right li a:hover, .menu4 .menu-con .ul-con .right .ul-menu-right li a:hover, .menu5 .menu-con .ul-con .right .ul-menu-right li a:hover, .menu6 .menu-con .ul-con .right .ul-menu-right li a:hover {
+  color: skyblue;
+  transition: 0.7s;
+}
+.menu1 .menu-con .ul-con .right .img a, .menu2 .menu-con .ul-con .right .img a, .menu3 .menu-con .ul-con .right .img a, .menu4 .menu-con .ul-con .right .img a, .menu5 .menu-con .ul-con .right .img a, .menu6 .menu-con .ul-con .right .img a {
+  display: flex;
+  overflow: hidden;
+}
+.menu1 .menu-con .ul-con .right .img a img, .menu2 .menu-con .ul-con .right .img a img, .menu3 .menu-con .ul-con .right .img a img, .menu4 .menu-con .ul-con .right .img a img, .menu5 .menu-con .ul-con .right .img a img, .menu6 .menu-con .ul-con .right .img a img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+.menu1 .menu-con .ul-con .right .img a img:hover, .menu2 .menu-con .ul-con .right .img a img:hover, .menu3 .menu-con .ul-con .right .img a img:hover, .menu4 .menu-con .ul-con .right .img a img:hover, .menu5 .menu-con .ul-con .right .img a img:hover, .menu6 .menu-con .ul-con .right .img a img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+.menu1 .menu-con .ul-con .right .img p, .menu2 .menu-con .ul-con .right .img p, .menu3 .menu-con .ul-con .right .img p, .menu4 .menu-con .ul-con .right .img p, .menu5 .menu-con .ul-con .right .img p, .menu6 .menu-con .ul-con .right .img p {
+  color: black;
+  font-size: 1vw;
+  margin-top: 6%;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu1, .menu2, .menu3, .menu4, .menu5, .menu6 {
+    padding: 1%;
+    width: 60%;
+  }
+  .menu1 .menu-con .back-btn, .menu2 .menu-con .back-btn, .menu3 .menu-con .back-btn, .menu4 .menu-con .back-btn, .menu5 .menu-con .back-btn, .menu6 .menu-con .back-btn {
+    width: 30%;
+    border: 0.1vw black solid;
+    border-radius: 20px;
+    padding: 2%;
+    margin-bottom: 3%;
+  }
+  .menu1 .menu-con .back-btn .back-btn-con i, .menu2 .menu-con .back-btn .back-btn-con i, .menu3 .menu-con .back-btn .back-btn-con i, .menu4 .menu-con .back-btn .back-btn-con i, .menu5 .menu-con .back-btn .back-btn-con i, .menu6 .menu-con .back-btn .back-btn-con i {
+    font-size: 3vw;
+  }
+  .menu1 .menu-con .back-btn .back-btn-con p, .menu2 .menu-con .back-btn .back-btn-con p, .menu3 .menu-con .back-btn .back-btn-con p, .menu4 .menu-con .back-btn .back-btn-con p, .menu5 .menu-con .back-btn .back-btn-con p, .menu6 .menu-con .back-btn .back-btn-con p {
+    font-size: 3vw;
+  }
+  .menu1 .menu-con .ul-con .ul-menu-left, .menu2 .menu-con .ul-con .ul-menu-left, .menu3 .menu-con .ul-con .ul-menu-left, .menu4 .menu-con .ul-con .ul-menu-left, .menu5 .menu-con .ul-con .ul-menu-left, .menu6 .menu-con .ul-con .ul-menu-left {
+    width: 100%;
+    line-height: 3;
+  }
+  .menu1 .menu-con .ul-con .ul-menu-left p, .menu2 .menu-con .ul-con .ul-menu-left p, .menu3 .menu-con .ul-con .ul-menu-left p, .menu4 .menu-con .ul-con .ul-menu-left p, .menu5 .menu-con .ul-con .ul-menu-left p, .menu6 .menu-con .ul-con .ul-menu-left p {
+    font-size: 3vw;
+  }
+  .menu1 .menu-con .ul-con .ul-menu-left li a, .menu2 .menu-con .ul-con .ul-menu-left li a, .menu3 .menu-con .ul-con .ul-menu-left li a, .menu4 .menu-con .ul-con .ul-menu-left li a, .menu5 .menu-con .ul-con .ul-menu-left li a, .menu6 .menu-con .ul-con .ul-menu-left li a {
+    font-size: 3vw;
+  }
+  .menu1 .menu-con .ul-con .right, .menu2 .menu-con .ul-con .right, .menu3 .menu-con .ul-con .right, .menu4 .menu-con .ul-con .right, .menu5 .menu-con .ul-con .right, .menu6 .menu-con .ul-con .right {
+    display: none;
+  }
+}
+main .baner {
+  height: 40vw;
+  background-image: url(../images/baner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+main .id-5 {
+  background: linear-gradient(to right, rgb(0, 67, 122), rgb(17, 99, 167));
+  width: 50%;
+  padding: 2% 8% 10% 8%;
+}
+main .id-5 h1 {
+  font-size: 3vw;
+  color: white;
+}
+main .id-5 button {
+  background-color: white;
+  border: none;
+  font-size: 0.9vw;
+  padding: 1% 5%;
+  border-radius: 20px;
+  margin: 7% 0;
+}
+main .id-5 ul li {
+  list-style: decimal;
+  list-style-position: outside;
+  color: white;
+  font-size: 1vw;
+  padding-left: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  main .baner {
+    background-image: url(../images/baner-mo.webp);
+    height: 100vh;
+    background-position: 85%;
+  }
+  main .id-5 {
+    width: 70%;
+  }
+  main .id-5 h1 {
+    font-size: 6vw;
+  }
+  main .id-5 button {
+    font-size: 4vw;
+  }
+  main .id-5 ul li {
+    font-size: 4vw;
+  }
+}
+main .highlights {
+  padding: 4% 3%;
+}
+main .highlights h1 {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 3%;
+}
+main .highlights .highlights-con {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .highlights .highlights-con .tiguan, main .highlights .highlights-con .t-roc, main .highlights .highlights-con .modelle, main .highlights .highlights-con .taigo {
+  width: 50%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .highlights .highlights-con .tiguan span .img, main .highlights .highlights-con .t-roc span .img, main .highlights .highlights-con .modelle span .img, main .highlights .highlights-con .taigo span .img {
+  position: relative;
+  overflow: hidden;
+}
+main .highlights .highlights-con .tiguan span .img a, main .highlights .highlights-con .t-roc span .img a, main .highlights .highlights-con .modelle span .img a, main .highlights .highlights-con .taigo span .img a {
+  display: flex;
+}
+main .highlights .highlights-con .tiguan span .img a img, main .highlights .highlights-con .t-roc span .img a img, main .highlights .highlights-con .modelle span .img a img, main .highlights .highlights-con .taigo span .img a img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+main .highlights .highlights-con .tiguan span .img a img:hover, main .highlights .highlights-con .t-roc span .img a img:hover, main .highlights .highlights-con .modelle span .img a img:hover, main .highlights .highlights-con .taigo span .img a img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+main .highlights .highlights-con .tiguan span .img .floatedText1, main .highlights .highlights-con .tiguan span .img .floatedText2, main .highlights .highlights-con .t-roc span .img .floatedText1, main .highlights .highlights-con .t-roc span .img .floatedText2, main .highlights .highlights-con .modelle span .img .floatedText1, main .highlights .highlights-con .modelle span .img .floatedText2, main .highlights .highlights-con .taigo span .img .floatedText1, main .highlights .highlights-con .taigo span .img .floatedText2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+main .highlights .highlights-con .tiguan span .img .floatedText1 .floated1-con, main .highlights .highlights-con .tiguan span .img .floatedText1 .floated2-con, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated1-con, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated2-con, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated1-con, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated2-con, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated1-con, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated2-con, main .highlights .highlights-con .modelle span .img .floatedText1 .floated1-con, main .highlights .highlights-con .modelle span .img .floatedText1 .floated2-con, main .highlights .highlights-con .modelle span .img .floatedText2 .floated1-con, main .highlights .highlights-con .modelle span .img .floatedText2 .floated2-con, main .highlights .highlights-con .taigo span .img .floatedText1 .floated1-con, main .highlights .highlights-con .taigo span .img .floatedText1 .floated2-con, main .highlights .highlights-con .taigo span .img .floatedText2 .floated1-con, main .highlights .highlights-con .taigo span .img .floatedText2 .floated2-con {
+  display: flex;
+  justify-content: space-between;
+}
+main .highlights .highlights-con .tiguan span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .tiguan span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated2-con p, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated2-con p, main .highlights .highlights-con .modelle span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .modelle span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .modelle span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .modelle span .img .floatedText2 .floated2-con p, main .highlights .highlights-con .taigo span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .taigo span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .taigo span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .taigo span .img .floatedText2 .floated2-con p {
+  width: 80%;
+  font-size: 1vw;
+  color: white;
+}
+main .highlights .highlights-con .tiguan span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .tiguan span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated2-con i, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated2-con i, main .highlights .highlights-con .modelle span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .modelle span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .modelle span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .modelle span .img .floatedText2 .floated2-con i, main .highlights .highlights-con .taigo span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .taigo span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .taigo span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .taigo span .img .floatedText2 .floated2-con i {
+  font-size: 1vw;
+  color: white;
+  cursor: pointer;
+}
+main .highlights .highlights-con .tiguan span .text, main .highlights .highlights-con .t-roc span .text, main .highlights .highlights-con .modelle span .text, main .highlights .highlights-con .taigo span .text {
+  padding: 1%;
+  line-height: 1.6;
+}
+main .highlights .highlights-con .tiguan span .text p, main .highlights .highlights-con .t-roc span .text p, main .highlights .highlights-con .modelle span .text p, main .highlights .highlights-con .taigo span .text p {
+  font-size: 1vw;
+}
+main .highlights .highlights-con .tiguan span .text h2, main .highlights .highlights-con .t-roc span .text h2, main .highlights .highlights-con .modelle span .text h2, main .highlights .highlights-con .taigo span .text h2 {
+  font-size: 1.5vw;
+}
+main .highlights .highlights-con .tiguan span .text a, main .highlights .highlights-con .t-roc span .text a, main .highlights .highlights-con .modelle span .text a, main .highlights .highlights-con .taigo span .text a {
+  font-size: 1vw;
+  color: black;
+}
+main .highlights .highlights-con .tiguan span {
+  width: 70%;
+}
+main .highlights .highlights-con .t-roc span {
+  width: 90%;
+}
+main .highlights .highlights-con .modelle {
+  align-items: flex-end;
+  padding-top: 10%;
+}
+main .highlights .highlights-con .modelle span {
+  width: 80%;
+}
+main .highlights .highlights-con .taigo {
+  align-items: center;
+  padding-bottom: 5%;
+}
+main .highlights .highlights-con .taigo span {
+  width: 70%;
+}
+main .highlights .highlights-con .taigo span .text h2 {
+  font-weight: lighter;
+  font-size: 1vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .highlights h1 {
+    font-size: 6vw;
+  }
+  main .highlights .highlights-con .tiguan, main .highlights .highlights-con .t-roc, main .highlights .highlights-con .modelle, main .highlights .highlights-con .taigo {
+    width: 100%;
+  }
+  main .highlights .highlights-con .tiguan span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .tiguan span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated2-con p, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated2-con p, main .highlights .highlights-con .modelle span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .modelle span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .modelle span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .modelle span .img .floatedText2 .floated2-con p, main .highlights .highlights-con .taigo span .img .floatedText1 .floated1-con p, main .highlights .highlights-con .taigo span .img .floatedText1 .floated2-con p, main .highlights .highlights-con .taigo span .img .floatedText2 .floated1-con p, main .highlights .highlights-con .taigo span .img .floatedText2 .floated2-con p {
+    font-size: 3vw;
+  }
+  main .highlights .highlights-con .tiguan span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .tiguan span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .tiguan span .img .floatedText2 .floated2-con i, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .t-roc span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .t-roc span .img .floatedText2 .floated2-con i, main .highlights .highlights-con .modelle span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .modelle span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .modelle span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .modelle span .img .floatedText2 .floated2-con i, main .highlights .highlights-con .taigo span .img .floatedText1 .floated1-con i, main .highlights .highlights-con .taigo span .img .floatedText1 .floated2-con i, main .highlights .highlights-con .taigo span .img .floatedText2 .floated1-con i, main .highlights .highlights-con .taigo span .img .floatedText2 .floated2-con i {
+    font-size: 4vw;
+  }
+  main .highlights .highlights-con .tiguan span .text p, main .highlights .highlights-con .t-roc span .text p, main .highlights .highlights-con .modelle span .text p, main .highlights .highlights-con .taigo span .text p {
+    font-size: 3vw;
+  }
+  main .highlights .highlights-con .tiguan span .text h2, main .highlights .highlights-con .t-roc span .text h2, main .highlights .highlights-con .modelle span .text h2, main .highlights .highlights-con .taigo span .text h2 {
+    font-size: 4vw;
+  }
+  main .highlights .highlights-con .tiguan span .text a, main .highlights .highlights-con .t-roc span .text a, main .highlights .highlights-con .modelle span .text a, main .highlights .highlights-con .taigo span .text a {
+    font-size: 3vw;
+  }
+  main .highlights .highlights-con .tiguan span {
+    width: 100%;
+  }
+  main .highlights .highlights-con .t-roc span {
+    width: 100%;
+  }
+  main .highlights .highlights-con .modelle {
+    align-items: flex-end;
+    padding-top: 10%;
+  }
+  main .highlights .highlights-con .modelle span {
+    width: 100%;
+  }
+  main .highlights .highlights-con .taigo {
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  main .highlights .highlights-con .taigo span {
+    width: 100%;
+  }
+  main .highlights .highlights-con .taigo span .text p b {
+    font-size: 4vw;
+  }
+  main .highlights .highlights-con .taigo span .text h2 {
+    font-weight: lighter;
+    font-size: 3vw;
+  }
+}
+main .used {
+  background: linear-gradient(to right, rgb(0, 67, 122), rgb(17, 99, 167));
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+}
+main .used h1 {
+  font-size: 3vw;
+  color: white;
+}
+main .used .plus-content {
+  width: 25%;
+  padding: 1% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 0;
+}
+main .used .plus-content a {
+  color: white;
+  font-size: 0.8vw;
+  border: 1px white solid;
+  padding: 1% 3%;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .used .plus-content a i {
+  margin-right: 6%;
+  margin-top: 2%;
+}
+main .used .accordions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .used .accordions select {
+  width: 30%;
+  padding: 0.5%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 0.1vw white solid;
+  font-size: 0.9vw;
+  outline: none;
+  appearance: none;
+  background-image: url(../images/arrow.png);
+  background-position: right;
+  background-size: 1vw;
+  background-repeat: no-repeat;
+}
+main .used .accordions select optgroup {
+  color: black;
+}
+main .used form {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 0;
+}
+main .used form input[type=search] {
+  width: 65%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  padding: 1%;
+  font-size: 0.9vw;
+  border-bottom: 0.1vw white solid;
+}
+main .used form input[type=search]::placeholder {
+  color: white;
+}
+main .used form .checkBox {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+main .used form .checkBox .checkboxInputCon {
+  border: 0.1vw white solid;
+  position: relative;
+  background-color: transparent;
+  padding: 6%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .used form .checkBox .checkboxInputCon input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+main .used form .checkBox .checkboxInputCon input:checked {
+  opacity: 1;
+}
+main .used form .checkBox label {
+  color: white;
+  font-size: 0.9vw;
+  user-select: none;
+  width: 70%;
+}
+main .used form .checkBox label i {
+  border: 0.1vw skyblue solid;
+  margin-left: 3%;
+  padding: 3% 6%;
+  border-radius: 50%;
+  color: skyblue;
+}
+main .used .btn {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .used .btn button {
+  background-color: white;
+  color: black;
+  font-size: 0.9vw;
+  padding: 2%;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+main .used .btn a {
+  color: skyblue;
+  font-size: 0.9vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .used h1 {
+    font-size: 4vw;
+  }
+  main .used .plus-content {
+    width: 100%;
+  }
+  main .used .plus-content a {
+    font-size: 3vw;
+  }
+  main .used .accordions {
+    flex-wrap: wrap;
+  }
+  main .used .accordions select {
+    width: 100%;
+    font-size: 3vw;
+    background-size: 3vw;
+    margin-bottom: 6%;
+  }
+  main .used form {
+    width: 100%;
+  }
+  main .used form input[type=search] {
+    font-size: 3vw;
+    width: 50%;
+  }
+  main .used form .checkBox {
+    width: 40%;
+  }
+  main .used form .checkBox .checkboxInputCon {
+    padding: 7%;
+  }
+  main .used form .checkBox label {
+    font-size: 2.7vw;
+  }
+  main .used .btn {
+    width: 80%;
+    margin-top: 4%;
+  }
+  main .used .btn button {
+    font-size: 3vw;
+    width: 50%;
+  }
+  main .used .btn a {
+    font-size: 3vw;
+  }
+}
+main .angebote {
+  padding: 4% 6%;
+}
+main .angebote h1 {
+  font-size: 3vw;
+  text-align: center;
+}
+main .angebote .angebote-container {
+  margin-top: 2%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+main .angebote .angebote-container .angebote-bg-color {
+  background: linear-gradient(to right, rgb(0, 67, 122), rgb(17, 99, 167));
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 90%;
+}
+main .angebote .angebote-container .text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .angebote .angebote-container .text h1 {
+  font-size: 2vw;
+  color: white;
+  text-align: start;
+}
+main .angebote .angebote-container .text p {
+  font-size: 1vw;
+  color: white;
+  line-height: 1.7;
+}
+main .angebote .angebote-container .text button {
+  background-color: white;
+  color: black;
+  font-size: 0.9vw;
+  padding: 2% 0%;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+}
+main .angebote .angebote-container .img {
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+}
+main .angebote .angebote-container .img a {
+  display: flex;
+}
+main .angebote .angebote-container .img a img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+main .angebote .angebote-container .img a img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+main .angebote .angebote-container .img .img-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+main .angebote .angebote-container .img .img-text .img-txt-con {
+  display: flex;
+  justify-content: space-between;
+}
+main .angebote .angebote-container .img .img-text .img-txt-con i {
+  font-size: 1vw;
+  color: white;
+  cursor: pointer;
+}
+main .angebote .angebote-container .img .img-text .img-txt-con ul {
+  line-height: 1.7;
+  padding: 1.5%;
+}
+main .angebote .angebote-container .img .img-text .img-txt-con ul li {
+  color: white;
+  list-style: outside;
+  list-style-type: decimal;
+  padding-left: 3%;
+  font-size: 1vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .angebote h1 {
+    font-size: 6vw;
+  }
+  main .angebote .angebote-container {
+    flex-wrap: wrap;
+  }
+  main .angebote .angebote-container .angebote-bg-color {
+    width: 100%;
+  }
+  main .angebote .angebote-container .text {
+    width: 100%;
+  }
+  main .angebote .angebote-container .text h1 {
+    font-size: 6vw;
+  }
+  main .angebote .angebote-container .text p {
+    font-size: 3vw;
+    margin: 3% 0;
+  }
+  main .angebote .angebote-container .text button {
+    font-size: 3vw;
+    margin-bottom: 5%;
+  }
+  main .angebote .angebote-container .img {
+    width: 100%;
+  }
+  main .angebote .angebote-container .img .img-text .img-txt-con i {
+    font-size: 3vw;
+  }
+  main .angebote .angebote-container .img .img-text .img-txt-con ul {
+    padding-left: 3%;
+  }
+  main .angebote .angebote-container .img .img-text .img-txt-con ul li {
+    font-size: 2vw;
+  }
+}
+main .sorts {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+main .sorts span {
+  width: 30%;
+}
+main .sorts span .image {
+  display: flex;
+}
+main .sorts span .image img {
+  width: 100%;
+  height: 100%;
+}
+main .sorts span .text1, main .sorts span .text2, main .sorts span .text3 {
+  padding: 1% 0;
+  overflow: hidden;
+}
+main .sorts span .text1 h2, main .sorts span .text2 h2, main .sorts span .text3 h2 {
+  font-size: 1.3vw;
+  margin-bottom: 3%;
+}
+main .sorts span .text1 p, main .sorts span .text2 p, main .sorts span .text3 p {
+  font-size: 1vw;
+  line-height: 1.6;
+}
+main .sorts span .text1 a, main .sorts span .text2 a, main .sorts span .text3 a {
+  font-size: 0.9vw;
+  color: rgb(34, 20, 124);
+}
+main .sorts span .arrowUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sorts span .arrowUp i {
+  font-size: 1vw;
+  border: 0.1vw black solid;
+  padding: 1% 1.7%;
+  border-radius: 50%;
+}
+main .sorts span .arrowUp .fa-angle-up {
+  display: none;
+}
+main .sorts span .arrowUp .leftImg, main .sorts span .arrowUp .rightImg {
+  background-color: black;
+  width: 48%;
+  height: 0.1vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .sorts {
+    flex-wrap: wrap;
+  }
+  main .sorts span {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  main .sorts span .text1 h2, main .sorts span .text2 h2, main .sorts span .text3 h2 {
+    font-size: 4vw;
+  }
+  main .sorts span .text1 p, main .sorts span .text2 p, main .sorts span .text3 p {
+    font-size: 3vw;
+  }
+  main .sorts span .text1 a, main .sorts span .text2 a, main .sorts span .text3 a {
+    font-size: 3vw;
+  }
+  main .sorts span .arrowUp i {
+    font-size: 4vw;
+  }
+}
+@keyframes down1 {
+  from {
+    height: 10%;
+  }
+  to {
+    height: 29%;
+  }
+}
+@keyframes up1 {
+  from {
+    height: 29%;
+  }
+  to {
+    height: 10%;
+  }
+}
+@keyframes down2 {
+  from {
+    height: 10%;
+  }
+  to {
+    height: 37%;
+  }
+}
+@keyframes up2 {
+  from {
+    height: 37%;
+  }
+  to {
+    height: 10%;
+  }
+}
+@keyframes down3 {
+  from {
+    height: 12%;
+  }
+  to {
+    height: 45%;
+  }
+}
+@keyframes up3 {
+  from {
+    height: 45%;
+  }
+  to {
+    height: 12%;
+  }
+}
+@keyframes open {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes close {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes listOpen {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes back {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes opa {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+main .neuigkeiten {
+  padding: 3% 10%;
+}
+main .neuigkeiten h1 {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 4%;
+}
+main .neuigkeiten .neuigkeiten-con {
+  position: relative;
+}
+main .neuigkeiten .neuigkeiten-con .bg-color {
+  position: absolute;
+  background: linear-gradient(to right, rgb(0, 67, 122), rgb(17, 99, 167));
+  top: 7%;
+  left: 7%;
+  right: 0;
+  bottom: 20%;
+  width: 62%;
+  z-index: -1;
+}
+main .neuigkeiten .neuigkeiten-con .top {
+  display: flex;
+  justify-content: space-between;
+}
+main .neuigkeiten .neuigkeiten-con .top span .img {
+  position: relative;
+  overflow: hidden;
+}
+main .neuigkeiten .neuigkeiten-con .top span .img .image {
+  display: flex;
+}
+main .neuigkeiten .neuigkeiten-con .top span .img .image img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+main .neuigkeiten .neuigkeiten-con .top span .img .image img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+main .neuigkeiten .neuigkeiten-con .top span .img .img-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+main .neuigkeiten .neuigkeiten-con .top span .img .img-text ul {
+  padding-left: 2.5%;
+  display: flex;
+  justify-content: space-between;
+}
+main .neuigkeiten .neuigkeiten-con .top span .img .img-text ul li {
+  list-style-type: decimal;
+  padding-left: 1%;
+  color: white;
+  font-size: 0.9vw;
+}
+main .neuigkeiten .neuigkeiten-con .top span .img .img-text i {
+  color: white;
+  font-size: 1vw;
+}
+main .neuigkeiten .neuigkeiten-con .top span:first-child {
+  width: 55%;
+  padding-top: 10%;
+}
+main .neuigkeiten .neuigkeiten-con .top span:last-child {
+  width: 35%;
+}
+main .neuigkeiten .neuigkeiten-con .top span .text {
+  padding: 5% 0 2% 16%;
+  line-height: 1.7;
+}
+main .neuigkeiten .neuigkeiten-con .top span .text p {
+  font-size: 1vw;
+  color: white;
+}
+main .neuigkeiten .neuigkeiten-con .top span .text h2 {
+  font-size: 1.5vw;
+  color: white;
+}
+main .neuigkeiten .neuigkeiten-con .top span .text a {
+  color: skyblue;
+  font-size: 0.9vw;
+}
+main .neuigkeiten .neuigkeiten-con .top span:last-child .text p {
+  color: black;
+}
+main .neuigkeiten .neuigkeiten-con .top span:last-child .text h2 {
+  color: black;
+}
+main .neuigkeiten .neuigkeiten-con .top span:last-child .text a {
+  color: black;
+}
+main .neuigkeiten .neuigkeiten-con .bottom {
+  width: 40%;
+  margin-left: auto;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img {
+  position: relative;
+  overflow: hidden;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img .image {
+  display: flex;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img .image img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img .image img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img .img-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img .img-text ul {
+  padding-left: 2.5%;
+  display: flex;
+  justify-content: space-between;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img .img-text ul li {
+  list-style-type: decimal;
+  padding-left: 1%;
+  color: white;
+  font-size: 0.9vw;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .img .img-text i {
+  color: white;
+  font-size: 1vw;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .text {
+  padding: 4% 0 0 7%;
+  line-height: 1.7;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .text h2 {
+  font-weight: lighter;
+  font-size: 1.5vw;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .text p {
+  width: 80%;
+  font-size: 1vw;
+  margin: 2% 0;
+}
+main .neuigkeiten .neuigkeiten-con .bottom span .text a {
+  color: black;
+  font-size: 0.9vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .neuigkeiten h1 {
+    font-size: 6vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .bg-color {
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  main .neuigkeiten .neuigkeiten-con .top {
+    flex-wrap: wrap;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span:first-child {
+    width: 100%;
+    padding-top: 0%;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span:last-child {
+    width: 100%;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span .img .img-text ul {
+    padding-left: 4%;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span .img .img-text ul li {
+    font-size: 3vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span .text {
+    padding: 5% 0;
+    text-align: center;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span .text p {
+    font-size: 4vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span .text h2 {
+    font-size: 5vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span .text a {
+    font-size: 3vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span:last-child .text p {
+    color: white;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span:last-child .text h2 {
+    color: white;
+  }
+  main .neuigkeiten .neuigkeiten-con .top span:last-child .text a {
+    color: white;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom {
+    width: 100%;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom span .img .img-text ul {
+    padding-left: 4%;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom span .img .img-text ul li {
+    font-size: 3vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom span .img .img-text i {
+    font-size: 4vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom span .text {
+    padding: 5% 2%;
+    text-align: center;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom span .text p {
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom span .text h2 {
+    font-size: 5vw;
+    color: white;
+  }
+  main .neuigkeiten .neuigkeiten-con .bottom span .text a {
+    color: white;
+    font-size: 3vw;
+  }
+}
+main .weitere {
+  padding: 3% 6%;
+}
+main .weitere h1 {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 4%;
+}
+main .weitere .weitere-con {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+}
+main .weitere .weitere-con .bg-color {
+  background: linear-gradient(to right, rgb(0, 67, 122), rgb(17, 99, 167));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  z-index: -1;
+}
+main .weitere .weitere-con .text {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .weitere .weitere-con .text p {
+  font-size: 1vw;
+  line-height: 1.6;
+  color: white;
+}
+main .weitere .weitere-con .text h1 {
+  text-align: start;
+  font-size: 2.5vw;
+  font-weight: lighter;
+  color: white;
+}
+main .weitere .weitere-con .text button {
+  width: 65%;
+  font-size: 0.9vw;
+  padding: 3% 2%;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 0.1vw white solid;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+main .weitere .weitere-con .img {
+  width: 70%;
+  overflow: hidden;
+}
+main .weitere .weitere-con .img a {
+  display: flex;
+}
+main .weitere .weitere-con .img a img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+main .weitere .weitere-con .img a img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+
+@media only screen and (max-width: 800px) {
+  main .weitere h1 {
+    font-size: 6vw;
+  }
+  main .weitere .weitere-con {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  main .weitere .weitere-con .bg-color {
+    width: 100%;
+  }
+  main .weitere .weitere-con .text {
+    width: 100%;
+    padding: 3% 2%;
+  }
+  main .weitere .weitere-con .text p {
+    font-size: 4vw;
+  }
+  main .weitere .weitere-con .text h1 {
+    font-size: 6vw;
+  }
+  main .weitere .weitere-con .text button {
+    font-size: 3vw;
+    margin-top: 3%;
+  }
+  main .weitere .weitere-con .img {
+    width: 100%;
+  }
+}
+main .grid {
+  padding: 3% 6%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid .left, main .grid .mid, main .grid .right {
+  width: 30%;
+}
+main .grid .left span .img, main .grid .mid span .img, main .grid .right span .img {
+  overflow: hidden;
+}
+main .grid .left span .img a, main .grid .mid span .img a, main .grid .right span .img a {
+  display: flex;
+}
+main .grid .left span .img a img, main .grid .mid span .img a img, main .grid .right span .img a img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+main .grid .left span .img a img:hover, main .grid .mid span .img a img:hover, main .grid .right span .img a img:hover {
+  transform: scale(1.05);
+  filter: grayscale(1);
+  transition: 0.7s;
+}
+main .grid .left span .text, main .grid .mid span .text, main .grid .right span .text {
+  padding: 4% 0 10% 0;
+  line-height: 1.5;
+}
+main .grid .left span .text p, main .grid .mid span .text p, main .grid .right span .text p {
+  font-size: 1.5vw;
+}
+main .grid .left span .text a, main .grid .mid span .text a, main .grid .right span .text a {
+  font-size: 0.9vw;
+  font-weight: bold;
+  letter-spacing: 0.1vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .grid {
+    flex-wrap: wrap;
+  }
+  main .grid .left, main .grid .mid, main .grid .right {
+    width: 100%;
+  }
+  main .grid .left span .text p, main .grid .mid span .text p, main .grid .right span .text p {
+    font-size: 4vw;
+  }
+  main .grid .left span .text a, main .grid .mid span .text a, main .grid .right span .text a {
+    font-size: 3vw;
+  }
+}
+main footer {
+  padding: 4% 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+}
+main footer ul {
+  width: 30%;
+  line-height: 1.7;
+}
+main footer ul p {
+  font-size: 1vw;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+main footer ul li {
+  list-style: none;
+}
+main footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main footer {
+    flex-wrap: wrap;
+  }
+  main footer ul {
+    width: 49%;
+    margin-bottom: 5%;
+  }
+  main footer ul p {
+    font-size: 3.4vw;
+  }
+  main footer ul li a {
+    font-size: 3vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  user-select: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

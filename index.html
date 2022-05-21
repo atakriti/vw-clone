@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Description" content="VW-Clone" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>VW-Clone</title>
+  </head>
+  <body>
+    <!-- ========================= Header =================== -->
+    <header>
+      <nav>
+        <div onclick="openBtn()" class="menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+          <p>Menü</p>
+        </div>
+        <div class="header-icon">
+          <i class="fa-regular fa-circle-user"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav>
+      <div class="logo">
+        <div class="line-left"></div>
+        <!-- =========== SVG =============== -->
+        <svg
+          role="img"
+          aria-label="Volkswagen"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+        >
+          <title>Volkswagen</title>
+          <path
+            d="M12 22.586c-5.786 0-10.543-4.8-10.543-10.586 0-1.2.214-2.357.6-3.471l6.172 12c.085.171.171.3.385.3.215 0 .3-.129.386-.3l2.871-6.386c.043-.086.086-.129.129-.129.086 0 .086.086.129.129l2.914 6.386c.086.171.171.3.386.3.214 0 .3-.129.385-.3l6.172-12c.385 1.071.6 2.228.6 3.471-.043 5.786-4.8 10.586-10.586 10.586Zm0-13.329c-.086 0-.086-.086-.129-.128l-3.3-7.115a10.117 10.117 0 0 1 6.858 0l-3.3 7.115c-.043.042-.043.128-.129.128Zm-3.471 7.714c-.086 0-.086-.085-.129-.128L3 6.47c.943-1.542 2.314-2.828 3.9-3.728l3.814 8.228c.086.172.172.215.3.215h1.972c.128 0 .214-.043.3-.215l3.771-8.228c1.586.9 2.957 2.186 3.9 3.728L15.6 16.843c-.043.086-.086.128-.129.128-.085 0-.085-.085-.128-.128L13.286 12.3c-.086-.171-.172-.214-.3-.214h-1.972c-.128 0-.214.043-.3.214l-2.057 4.543c-.043.043-.043.128-.128.128ZM12 24c6.643 0 12-5.357 12-12S18.643 0 12 0 0 5.357 0 12s5.357 12 12 12Z"
+          ></path>
+        </svg>
+        <div class="line-right"></div>
+      </div>
+    </header>
+    <!-- ========================= Hamburger ============= =========================================-->
+    <div class="hamburger">
+      <div class="hamburger-con">
+        <!-- ********** close btn ************** -->
+        <div onclick="closeBtn()" class="close-btn">
+          <div class="close-btn-con">
+            <i class="fa-solid fa-xmark"></i>
+            <p>Menü schließen</p>
+          </div>
+        </div>
+        <!-- ************************************************** -->
+          <div class="container">
+           <div class="main-con">
+              <!-- *************** ul ************ -->
+              <ul class="ul-left">
+                <li onclick="list1()"><a >Modelle und Konfigurator</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list2()"><a >Angebote und Produkte</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list3()"><a >Elektroautos und Hybridautos</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list4()"><a >Konnektivität und Mobilitätsdienste</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list5()"><a >Marke und Erlebnis</a> <i class="fa-solid fa-angle-right"></i> </li>
+                <li onclick="list6()"><a >Besitzer und Nutzer</a> <i class="fa-solid fa-angle-right"></i> </li>
+              </ul>
+              <div class="right">
+                <!-- ************** ul right ************** -->
+                <ul class="ul-right">
+                  <p>Top-Links</p>
+                  <li><a href="#">Elektrofahrzeuge</a></li>
+                  <li><a href="#">Hybridfahrzeuge</a></li>
+                  <li><a href="#">Verbrennerfahrzeuge</a></li>
+                  <li><a href="#">Verfügbare Neu-, Jahres- und Gebrauchtwagen</a></li>
+                  <li><a href="#">ID. Online Leasing</a></li>
+                </ul>
+                <div class="img">
+                  <a ><img src="./images/menu-img.jpeg" alt=""></a>
+                  <p>Das Volkswagen AutoAbo</p>
+                </div>
+              </div>
+           </div>
+          </div>
+       <!-- *************************** links *************** -->
+       <ul class="ul-links">
+        <div class="ul-links-con">
+          <li><a href="#">Impressum</a></li> <span>|</span>
+          <li><a href="#">Nutzungsbedingungen</a></li>  <span>|</span>
+          <li><a href="#">Datenschutzerklärungen</a></li>  <span>|</span>
+          <li><a href="#">Cookie-Richtlinie</a></li>  <span>|</span>
+          <li><a href="#">Lizenzhinweise Dritter</a></li> 
+        </div> 
+       </ul>
+      </div>
+    </div>
+    <!-- ==========================ham-menu-1 ============================================================== -->
+    <div class="menu1">
+      <div class="menu-con">
+        <!-- ************************* -->
+        <div onclick="back1()" class="back-btn">
+          <div class="back-btn-con">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Zurück</p>
+          </div>
+        </div>
+        <!-- **************************************** -->
+        <div class="ul-con">
+          <!-- *************** -->
+          <ul class="ul-menu-left">
+            <p>Modelle und Konfigurator</p>
+            <li><a href="#">Modelle entdecken</a></li>
+            <li><a href="#">Konfigurator</a></li>
+            <li><a href="#">Modelle vergleichen</a></li>
+          </ul> 
+          <!-- **************** -->
+         <div class="right">
+            <ul class="ul-menu-right">
+              <p>Top-Links</p>
+                    <li><a href="#">Elektrofahrzeuge</a></li>
+                    <li><a href="#">Hybridfahrzeuge</a></li>
+                    <li><a href="#">Verbrennerfahrzeuge</a></li>
+                  </ul>
+                 
+            </ul>
+            <div class="img">
+              <a ><img src="./images/menu-img.jpeg" alt=""></a>
+              <p>Das Volkswagen AutoAbo</p>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================== ham-menu -2 ==================================================================== -->
+    <div class="menu2">
+      <div class="menu-con">
+        <!-- ************************* -->
+        <div onclick="back2()" class="back-btn">
+          <div class="back-btn-con">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Zurück</p>
+          </div>
+        </div>
+       <div class="ul-con">
+          <!-- *************** -->
+          <ul class="ul-menu-left">
+            <p>Angebote und Produkte</p>
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">Angebote Fahrzeugkauf</a></li>
+            <li><a href="#">Umweltbonus</a></li>
+          </ul> 
+          <!-- **************** -->
+          <div class="right">
+            <ul class="ul-menu-right">
+              <p>Top-Links</p>
+                    <li><a href="#">Wartung & Inspektion</a></li>
+                    <li><a href="#">Modele & Konfigurator</a></li>
+                    <li><a href="#">Hilfe-und Dialogcenter</a></li>
+                  </ul>
+                  
+            </ul>
+            <div class="img">
+              <a ><img src="./images/menu-img.jpeg" alt=""></a>
+              <p>Das Volkswagen AutoAbo</p>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+    <!-- ====================== ham-menu- 3 ========================================================== -->
+    <div class="menu3">
+      <div class="menu-con">
+        <!-- ************************* -->
+        <div onclick="back3()" class="back-btn">
+         <div class="back-btn-con">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Zurück</p>
+         </div>
+        </div>
+        <!-- *************** -->
+        <div class="ul-con">
+          <ul class="ul-menu-left">
+            <p>Elektroautos und Hybridautos </p>
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">Elektroautos</a></li>
+            <li><a href="#">Elektrofahrzeugkonzepte</a></li>
+          </ul> 
+          <!-- **************** -->
+         <div class="right">
+            <ul class="ul-menu-right">
+              <p>Top-Links</p>
+                    <li><a href="#">ID.4</a></li>
+                    <li><a href="#">ID.5</a></li>
+                    <li><a href="#">Routenplaner</a></li>
+                  </ul>
+                 
+            </ul>
+            <div class="img">
+              <a ><img src="./images/menu3.jpeg" alt=""></a>
+              <p><b>Der ID.Charger</b>-die Wallbox von Volkswagen</p>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================== ham-menu-4 ============================================================= -->
+    <div class="menu4">
+      <div class="menu-con">
+        <!-- ************************* -->
+        <div onclick="back4()" class="back-btn">
+          <div class="back-btn-con">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Zurück</p>
+          </div>
+        </div>
+        <!-- *************** -->
+        <div class="ul-con">
+          <ul class="ul-menu-left">
+            <p>Konnektivität und Mobilitätsdienste </p>
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">Konnektivität</a></li>
+            <li><a href="#">Mobilitätsdienste</a></li>
+          </ul> 
+          <!-- **************** -->
+          <div class="right">
+            <ul class="ul-menu-right">
+              <p>Top-Links</p>
+                    <li><a href="#">Aktivierung von We Connect</a></li>
+                    <li><a href="#">Aktivierung von Car-Net</a></li>
+                    <li><a href="#">We Connect Webshop</a></li>
+                  </ul>
+                 
+            </ul>
+            <div class="img">
+              <a ><img src="./images/manu4.jpeg" alt=""></a>
+              <p><b>We Upgrade.</b>Statten Sie Ihren Volkswagen nachträglich mit ausgewählten, zusätzlichen Funktion aus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================ham-menu-5=================================================================== -->
+    <div class="menu5">
+      <div class="menu-con">
+        <!-- ************************* -->
+        <div onclick="back5()" class="back-btn">
+        <div class="back-btn-con">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Zurück</p>
+        </div>
+        </div>
+        <!-- *************** -->
+       <div class="ul-con">
+          <ul class="ul-menu-left">
+            <p>Marke und Erlebnis </p>
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">Volkswagen R</a></li>
+            <li><a href="#">Driving Experience</a></li>
+          </ul> 
+          <!-- **************** -->
+          <div class="right">
+            <ul class="ul-menu-right">
+              <p>Top-Links</p>
+                    <li><a href="#">ID.Volkswagen</a></li>
+                    <li><a href="#">Karriere</a></li>
+                    <li><a href="#">Volkswagen Apps</a></li>
+                  </ul>
+                 
+            </ul>
+            <div class="img">
+              <a ><img src="./images/menu5.jpeg" alt=""></a>
+              <p><b>Newsletter abonnieren</b>und nichts mehr verpassen</p>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+    <!-- ===================================ham-menu-6================================================================ -->
+    <div class="menu6">
+      <div class="menu-con">
+        <!-- ************************* -->
+        <div onclick="back6()" class="back-btn">
+         <div class="back-btn-con">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Zurück</p>
+         </div>
+        </div>
+        <!-- *************** -->
+       <div class="ul-con">
+          <ul class="ul-menu-left">
+            <p>Besitzer und Nutzer </p>
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">myVolkswagen</a></li>
+            <li><a href="#">Kundeninformationen</a></li>
+          </ul> 
+          <!-- **************** -->
+         <div class="right">
+            <ul class="ul-menu-right">
+              <p>Top-Links</p>
+                    <li><a href="#">ID.Software-Updates</a></li>
+                    <li><a href="#">Pannen-und Unfallhilfe</a></li>
+                    <li><a href="#">Händlersuche</a></li>
+                  </ul>
+                  
+            </ul>
+            <div class="img">
+              <a ><img src="./images/menu6.jpeg " alt=""></a>
+              <p><b>Wallbox, Ladekabel und Co.</b>- Ladellösungen für Ihren Volkswagen</p>
+            </div>
+         </div>
+       </div>
+      </div>
+    </div>
+    <!-- ===================== main ==================== -->
+    <main>
+      <!-- ============ baner ============= -->
+      <div class="baner"></div>
+      <!-- ================ id5 ============== -->
+      <div class="id-5">
+        <h1>Der vollelektrische ID.5</h1>
+        <button>Mehr Zum ID.5</button>
+        <ul>
+          <li>
+            <b>ID.5 Pro</b> <br />
+            Stromverbrauch in kWh/100 km: kombiniert 16,2; CO₂-Emission in g/km:
+            <br />
+            kombiniert 0; Effizienzklasse: A+++. <br />
+            <b>ID.5 Pro Performance</b> <br />
+            Stromverbrauch in kWh/100 km: kombiniert 16,2; CO₂-Emission in g/km:
+            <br />
+            kombiniert 0; Effizienzklasse: A+++. <br />
+            Bildliche Darstellungen können vom Auslieferungsstand abweichen.
+          </li>
+        </ul>
+      </div>
+      <!-- ================== Highlights ================ -->
+      <div class="highlights">
+        <h1>Aktuelle Modell-Highlights</h1>
+        <div class="highlights-con">
+          <!-- Tiguan  -->
+          <div class="tiguan">
+            <span>
+              <div class="img">
+                <a><img src="./images/tiguan.webp" alt="" /></a>
+                <div class="floatedText1">
+                  <div class="floated1-con">
+                    <p>
+                      Die nachfolgenden Fahrzeugabbildungen zeigen
+                      Sonderausstattungen.
+                    </p>
+                    <i onclick="iX1()" class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Modelle und Konfigurator</p>
+                <h2>Der neue Tiguan Allspace</h2>
+                <a href="#">Mehr zum neuen Tiguan Allspace</a>
+              </div>
+            </span>
+          </div>
+          <!-- T-Roc -->
+          <div class="t-roc">
+            <span>
+              <div class="img">
+                <a><img src="./images/t-roc.webp" alt="" /></a>
+                <div class="floatedText2">
+                  <div class="floated2-con">
+                    <p>
+                      Kraftstoffverbrauch T‑Roc Cabriolet R-Line in l/100 km:
+                      7,2-6,4; außerorts 5,4-4,9; kombiniert 5,9-5,6;
+                      CO₂-Emission in g/km: kombiniert 134-128; Effizienzklasse:
+                      B.
+                    </p>
+                    <i onclick="iX2()" class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Modelle und Konfigurator</p>
+                <h2>Das neue T‑Roc Cabriolet</h2>
+                <a href="#">Mehr zum neuen T-Roc Cabriolet</a>
+              </div>
+            </span>
+          </div>
+          <!-- modelle  -->
+          <div class="modelle">
+            <span>
+              <div class="img">
+                <a><img src="./images/modelle.webp" alt="" /></a>
+              </div>
+              <div class="text">
+                <p>Modelle und Konfigurator</p>
+                <h2>Jetzt alle <b>Volkswagen Modelle </b> entdecken</h2>
+                <a href="#"
+                  >Weitere Modelle finden Sie in unserer Modellübersicht</a
+                >
+              </div>
+            </span>
+          </div>
+          <!-- taigo -->
+          <div class="taigo">
+            <span>
+              <div class="img">
+                <a><img src="./images/taigo.webp" alt="" /></a>
+              </div>
+              <div class="text">
+                <p>
+                  Modelle und Konfigurator <br />
+                  <b>Der neue Taigo</b>
+                </p>
+                <h2>
+                  Der neue Taigo. Für alle, die ihre eigenen Trends setzen. Die
+                  sich nicht verändern lassen, sondern lieber selbst etwas
+                  bewegen. Die nicht nur Stil zeigen, sondern Charakter. Und die
+                  selbst im Alltag das Außergewöhnliche finden.
+                </h2>
+                <a href="#">Mehr zum neuen Taigo</a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- ============= new and used cars ================ -->
+      <div class="used">
+        <h1>Neu-, Jahres- und Gebrauchtwagen</h1>
+        <!-- ============= plus content ============ -->
+        <div class="plus-content">
+          <a href="#"><i class="fa-solid fa-plus"></i> Neuwagen</a>
+          <a href="#"> <i class="fa-solid fa-plus"></i> Jahreswagen</a>
+          <a href="#"><i class="fa-solid fa-plus"></i> Gebrauchtwagen</a>
+        </div>
+        <!-- ================ Accordion ============ -->
+        <div class="accordions">
+          <!-- ===================== -->
+          <select name="modelle" id="1">
+            <optgroup label="Modelle">
+              <option value="fox">Fox</option>
+              <option selected value="golf">Golf</option>
+              <option value="golf Plus">Golf Plus</option>
+              <option value="passat">Passat</option>
+            </optgroup>
+          </select>
+          <!-- ====================== -->
+          <select name="kraftstoff" id="2">
+            <optgroup label="Kraftstoff">
+              <option value="autogas">Autogas</option>
+              <option selected value="benzin ">Benzin</option>
+              <option value="Diesel">Diesel</option>
+              <option value="elektro">Elektro</option>
+            </optgroup>
+          </select>
+          <!-- ======================== -->
+          <select name="pries bis" id="3">
+            <optgroup label="Preise bis">
+              <option value="1000">1000 €</option>
+              <option value="2500 ">2500 €</option>
+              <option value="4000">4000 €</option>
+              <option value="5000">5000 €</option>
+            </optgroup>
+          </select>
+        </div>
+        <!-- ================= form================= -->
+        <form action="">
+          <input
+            placeholder="Postleitzahl, Ort"
+            type="search"
+            name="search"
+            id="4"
+          />
+          <div class="checkBox">
+            <div class="checkboxInputCon">
+              <input type="checkbox" name="online" id="5" />
+            </div>
+            <label for="online"
+              >Online kaufbar <i class="fa-solid fa-info"></i
+            ></label>
+          </div>
+        </form>
+        <!-- =================== button ========= -->
+        <div class="btn">
+          <button>96 Treffer anzeigen</button>
+          <a href="#"
+            >Detailsuche öffnen
+            <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+      <!-- ============================= ANGEBOTE =============== -->
+      <div class="angebote">
+        <h1>Angebote und Aktionen</h1>
+        <div class="angebote-container">
+          <div class="angebote-bg-color"></div>
+          <!-- =============== text -->
+          <div class="text">
+            <h1>
+              Das Volkswagen <br />
+              AutoAbo
+            </h1>
+            <p>
+              Elektromobilität bei voller Kostentransparenz erleben und dabei
+              flexibel bleiben: Das Volkswagen AutoAbo liefert Ihnen genau das.
+              Unsere Modelle ID.3 und ID.4 sind kurzfristig verfügbar und bieten
+              vollelektrischen Fahrspaß mit attraktiver Ausstattung. Einfach
+              online buchbar, ohne langfristige Bindung zum monatlichen
+              Festpreis. Nur Ihre Ladestromkosten kommen noch dazu.
+            </p>
+            <button>Zum Volkswagen AutoAbo</button>
+          </div>
+          <!-- ================= img -->
+          <div class="img">
+            <a><img src="./images/angebote.webp" alt="" /></a>
+            <div class="img-text">
+              <div class="img-txt-con">
+                <ul>
+                  <li>
+                    Ihr Vertrags- und Ansprechpartner ist die EURO-Leasing GmbH
+                    (Impressum). Hinweise zur Datenverarbeitung finden Sie unter
+                    folgendem Link.
+                  </li>
+                  <li>
+                    Stromverbrauch ID.3 in kWh/100 km: kombiniert 14,0-13,7;
+                    CO2-Emission in g/km: kombiniert 0; Effizienzklasse: A+++.*
+                    <br />
+                    *Der ID.3 Pure Performance ist vorrübergehend nicht mit
+                    einer individuellen Ausstattung bestellbar.
+                  </li>
+                  <li>
+                    Stromverbrauch ID.4 in kWh/100 km: kombiniert 16,3-15,6;
+                    CO2-Emission in g/km: kombiniert 0; Effizienzklasse: A+++.
+                  </li>
+                  <li>
+                    Die nachfolgenden Fahrzeugabbildungen zeigen
+                    Sonderausstattungen.
+                  </li>
+                </ul>
+                <i onclick="iX3()" class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============== sorts ============= -->
+      <div class="sorts">
+        <!-- ========== one =========== -->
+        <span>
+          <a class="image"><img src="./images/id.webp" alt="" /></a>
+          <div class="text1">
+            <h2>ID. Charger8</h2>
+            <p>
+              Variante bequem online oder über Ihren Volkswagen Händler
+              bestellen.
+            </p>
+            <a href="#"
+              >Weiter zum ID.Charger im Online-Shop
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div class="arrowUp">
+            <div class="leftImg leftImg1"></div>
+            <i onclick="down1()" class="fa-solid fa-angle-down"></i>
+            <i onclick="up1()" class="fa-solid fa-angle-up"></i>
+            <div class="rightImg rightImg1"></div>
+          </div>
+        </span>
+        <!-- ============== two =========== -->
+        <span>
+          <a class="image"><img src="./images/active.webp" alt="" /></a>
+          <div class="text2">
+            <h2>ACTIVE Sondermodelle</h2>
+            <p>
+              Egal, was Sie antreibt: Mit unseren ACTIVE Sondermodellen bieten
+              wir Ihnen eine Vielfalt einzigartiger Volkswagen mit exklusiven
+              Design- und Ausstattungs-Highlights für fast jeden Anspruch.
+            </p>
+            <a href="#">Zu den ACTIVE Sondermodellen</a>
+          </div>
+          <div class="arrowUp">
+            <div class="leftImg"></div>
+            <i onclick="down2()" class="fa-solid fa-angle-down down2"></i>
+            <i onclick="up2()" class="fa-solid fa-angle-up up2"></i>
+            <div class="rightImg"></div>
+          </div>
+        </span>
+        <!-- ================= three ============ -->
+        <span>
+          <a class="image"><img src="./images/zubehör.webp" alt="" /></a>
+          <div class="text3">
+            <h2>
+              Zubehör und Service für einen frischen Start in den Frühling
+            </h2>
+            <p>
+              Ihr Auto muss im Winter Höchstleistungen vollbringen – wie wäre es
+              nach dieser Zeit mit einer kleinen Frühjahrskur für Ihren
+              Volkswagen? Mit diesen Produkten und Services können Sie ihm eine
+              Extraportion Pflege gönnen.
+            </p>
+            <a href="#">Mehr zu den Saisonangeboten</a>
+          </div>
+          <div class="arrowUp">
+            <div class="leftImg"></div>
+            <i onclick="down3()" class="fa-solid fa-angle-down down3"></i>
+            <i onclick="up3()" class="fa-solid fa-angle-up up3"></i>
+            <div class="rightImg"></div>
+          </div>
+        </span>
+      </div>
+      <!-- =============== Neuigkeiten ================ -->
+      <div class="neuigkeiten">
+        <h1>Neuigkeiten und Innovationen</h1>
+        <div class="neuigkeiten-con">
+          <div class="bg-color"></div>
+          <!-- ========= top -->
+          <div class="top">
+            <!-- ====== -->
+            <span>
+              <div class="img">
+                <a class="image"><img src="./images/neuig 1.webp" alt="" /></a>
+                <div class="img-text img-text1">
+                  <ul>
+                    <li>Fahrzeugabbildung zeigt seriennahe Studie.</li>
+                    <i onclick="iX4()" class="fa-solid fa-xmark"></i>
+                  </ul>
+                </div>
+              </div>
+              <div class="text">
+                <p>Bereit für Großes?</p>
+                <h2>Der neue ID. Buzz.</h2>
+                <a href="#">Mehr zum ID.Buzz</a>
+              </div>
+            </span>
+            <!-- ========= -->
+            <span>
+              <div class="img">
+                <a class="image"><img src="./images/neuig2.webp" alt="" /></a>
+                <div class="img-text img-text2">
+                  <ul>
+                    <li>
+                      <b>ID.3 Pro Performance:</b> Stromverbrauch in kWh/100 km:
+                      kombiniert 13,7; CO2-Emission in g/km: kombiniert 0;
+                      Effizienzklasse: A+++. <br />
+                      ID.3 Pro S: Stromverbrauch in kWh/100 km: kombiniert 14,0;
+                      CO2-Emission in g/km: kombiniert 0; Effizienzklasse: A+++.
+                    </li>
+                    <i onclick="iX5()" class="fa-solid fa-xmark"></i>
+                  </ul>
+                </div>
+              </div>
+              <div class="text">
+                <p>Informieren Sie sich über verfügbare</p>
+                <h2>Software-Updates für Ihren ID.</h2>
+                <a href="#">Mehr zu Software-Updates</a>
+              </div>
+            </span>
+          </div>
+          <!-- ========== bottom  -->
+          <div class="bottom">
+            <span>
+              <div class="img">
+                <a class="image"><img src="./images/neuig3.webp" alt="" /></a>
+                <div class="img-text img-text3">
+                  <ul>
+                    <li>
+                      Die nachfolgenden Fahrzeugabbildungen zeigen
+                      Sonderausstattungen.
+                    </li>
+                    <i onclick="iX6()" class="fa-solid fa-xmark"></i>
+                  </ul>
+                </div>
+              </div>
+              <div class="text">
+                <h2>Der Polo mit <b>„ACTIVE“-Paket</b></h2>
+                <p>
+                  Das Besondere am Polo mit „ACTIVE“-Paket: seine gut
+                  aufeinander abgestimmte Ausstattung und sein
+                  charakteristisches Design. Entdecken Sie selbst, was der Polo
+                  mit „ACTIVE“-Paket noch bereithält.
+                </p>
+                <a href="#">Mehr zum Polo mit „ACTIVE“- Paket</a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- ==================== Weitere Bereiche =============== -->
+      <div class="weitere">
+        <h1>Weitere Bereiche</h1>
+        <div class="weitere-con">
+          <div class="bg-color"></div>
+          <!-- ========== text  -->
+          <div class="text">
+            <span>
+              <p>Besitzer und Nutzer</p>
+              <h1>
+                <b>Zubehör, Service und Ersatzteile</b> – <br />
+                alles nach dem Autokauf
+              </h1>
+            </span>
+            <p>
+              Sie fahren einen Volkswagen und benötigen Zubehör oder einen
+              Service? Dann sind Sie hier genau richtig. Wir informieren Sie
+              auch über Tipps zu Ihrem Volkswagen und unseren Vorgängermodellen.
+            </p>
+            <button>Mehr zu Besitzer und Nutzer</button>
+          </div>
+          <!-- ============= img -->
+          <div class="img">
+            <a><img src="./images/weitere.webp" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- ================ grid Pics ========== -->
+      <div class="grid">
+        <!-- ========================================= LEFT ============== -->
+        <div class="left">
+          <!-- ============ one -->
+          <span>
+            <div class="img">
+              <a class="image"><img src="./images/1.webp" alt="" /></a>
+            </div>
+            <div class="text">
+              <p><b>Der Reichweitensimulator</b> von Volkswagen</p>
+              <a href="#">Mehr zum Reichweitensimulator</a>
+            </div>
+          </span>
+          <!-- ============ two -->
+          <span>
+            <div class="img">
+              <a class="image"><img src="./images/4.webp" alt="" /></a>
+            </div>
+            <div class="text">
+              <p>Marke und Erlebnis - <b>Erlebe Volkswagen</b></p>
+              <a href="#">Erlebe Volkswagen</a>
+            </div>
+          </span>
+        </div>
+        <!-- ========================================================= MID ============ -->
+        <div class="mid">
+          <!-- ======== three -->
+          <span>
+            <div class="img">
+              <a class="image"><img src="./images/2.webp" alt="" /></a>
+            </div>
+            <div class="text">
+              <p>
+                Hier erfahren Sie, wie Konnektivität Ihnen
+                <b>das Leben leichter macht.</b>
+              </p>
+              <a href="#">Mehr zu Konnektivität</a>
+            </div>
+          </span>
+          <!-- ============ four -->
+          <span>
+            <div class="img">
+              <a class="image"><img src="./images/5.webp" alt="" /></a>
+            </div>
+            <div class="text">
+              <p>Zum <b>Newsletter anmelden</b></p>
+              <a href="#">Newsletter abonnieren</a>
+            </div>
+          </span>
+        </div>
+
+        <!-- ====================================================== RIGHT ================== -->
+        <div class="right">
+          <!-- ============== five -->
+          <span>
+            <div class="img">
+              <a class="image"><img src="./images/3.webp" alt="" /></a>
+            </div>
+            <div class="text">
+              <p>Rechnet sich: <b>für Geschäftskunden</b></p>
+              <a href="#">Zu den Angeboten für Geschäftskunden</a>
+            </div>
+          </span>
+          <!-- =============== six -->
+          <span>
+            <div class="img">
+              <a class="image"><img src="./images/6.webp" alt="" /></a>
+            </div>
+            <div class="text">
+              <p><b>Händlersuche</b> Volkswagen PKW</p>
+              <a href="#"
+                >Volkswagen Partner finden
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </span>
+        </div>
+      </div>
+      <!-- =================== footer ========================= -->
+      <footer>
+        <!-- ============== left ============ -->
+        <ul>
+          <p>Über Volkswagen</p>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Hilfe & Kontakt</a></li>
+          <li><a href="#">Karriere</a></li>
+        </ul>
+        <!-- ==================== mid =========== -->
+        <ul>
+          <p>Konzern</p>
+          <li><a href="#">Volkswagen Konzern</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="#">Kontakt Cyber Security</a></li>
+        </ul>
+        <!-- ================= right ============= -->
+        <ul>
+          <p>Social Media</p>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </footer>
+    </main>
+    <!-- =================== JavaScript SRC ==================== -->
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/menu-info.js"></script>
+  </body>
+</html>
