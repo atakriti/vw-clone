@@ -1,6 +1,6 @@
 // the open menu
 let open = document.querySelector(".hamburger");
-open.style.display = "block";
+open.style.display = "none";
 let openBtn = () => {
   if (open.style.display === "none") {
       setTimeout(() => (open.style.display = "block"), 100)
