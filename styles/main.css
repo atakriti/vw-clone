@@ -1567,6 +1567,11 @@ main footer ul li a {
   user-select: none;
 }
 
+body {
+  overflow: scroll;
+  user-zoom: zoom;
+}
+
 i {
   cursor: pointer;
 }
