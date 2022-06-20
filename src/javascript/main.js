@@ -163,3 +163,13 @@ let iX6 = () => {
         textNeuig3.style.display = "block"
     }
 }
+// ============================================
+document.body.style.zoom = 1
+document.body.addEventListener("keydown", (s) => {
+        // s.preventDefault()
+        if (s.ctrlKey &&  s.key == "+") {
+            document.body.style.zoom++
+        } else if (s.ctrlKey && s.key == "-") {
+            document.body.style.zoom--
+        }
+    })
